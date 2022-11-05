@@ -114,7 +114,7 @@ a:hover {
 }
 
 .showmenu {
-  transform: translateY(0px) scale(1);
+  transform: translateY(33px) scale(1);
 
   opacity: 1;
   z-index: 12;
@@ -131,12 +131,12 @@ a:hover {
 .menu {
   width: 100%;
   justify-items: center;
-  font-weight: bold;
+  font-weight: 600;
   grid-row-gap: 10%;
   font-size: 1.5rem;
   height: 100%;
   padding-top: 50px;
-  margin: 0 5vw;
+  margin: 0 4vw;
 }
 
 #menu-div {
@@ -787,7 +787,7 @@ input[type="checkbox"]:focus {
 #indexVid {
   width: 100%;
   /* height: 10rem; */
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 
 /* catalogh */
@@ -918,6 +918,7 @@ input[type="checkbox"]:focus {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  padding-left: 2rem;
 }
 
 .mobilemenu {
@@ -933,6 +934,11 @@ input[type="checkbox"]:focus {
   color: black;
 }
 
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
 .menu-items li {
   padding: 0.5rem;
 }
@@ -946,8 +952,8 @@ input[type="checkbox"]:focus {
 .items {
   /* display: none; */
   transform: translateX(100%);
-  position: relative;
-  top: 5rem;
+  position: absolute;
+  top: 18%;
   margin-left: 2rem;
 }
 
@@ -990,6 +996,7 @@ input[type="checkbox"]:focus {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
 }
 
 .lang li {
@@ -1027,7 +1034,7 @@ input[type="checkbox"]:focus {
   width: 80%;
 }
 
-/* complementi */
+/* poctroncine */
 .sedie-banner {
   width: 100%;
 }
@@ -1036,6 +1043,13 @@ input[type="checkbox"]:focus {
   margin-top: 7rem;
 }
 
-.banner-sedie {
-  height: 30vh;
+.sedie-chairs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+.chair-img {
+  width: 100%;
+}
+
+/* mobilemenu */
