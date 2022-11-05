@@ -1,29 +1,37 @@
-<?php 
+<?php
 
-    if(isset($_POST['btn-send']))
-    {
-       $Name = $_POST['name'];
-       $Surnmae = $_POST['surname']
-       $Email = $_POST['email'];
-       $Phonenumber = $_POST['number'];
-       $Request = $_POST['request'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$surname = $_POST['surnmae'];
+$number = $_POST['number'];
+$message = $_POST['request'];
 
-       if(empty($Name) || empty($Email) || empty($Phonenumber) || empty($Request))
-       {
-           header('location:contacts.php?error');
-       }
-       else
-       {
-           $to = "ogoayorindeshekinah@gmail.com";
+$mailheader = "From:".$name. "<" .$surname. "<".$email.">\r\n";
 
-           if(mail($to,$Phonenumber,$Request,$Email))
-           {
-               header("location:contacts.php?success");
-           }
-       }
-    }
-    else
-    {
-        header("location:index.php");
-    }
+$recipient = "ogoayorindeshekinah@gmail.com";
+
+mail($recipient, $number, $message, $mailheader) or die("Error!");
+
+echo'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
+        <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
+        
+    </div>
+</body>
+</html>
+';
+
+
 ?>
