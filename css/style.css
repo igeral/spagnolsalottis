@@ -1131,6 +1131,15 @@ input[type="checkbox"]:focus {
   .sedie-inner {
     grid-template-columns: 1fr 2fr;
   }
+
+  .carousel.slide {
+    display: none;
+  }
+}
+
+.w-80 {
+  width: 80%;
+  margin: auto;
 }
 
 @media screen and (max-width:512px) {
