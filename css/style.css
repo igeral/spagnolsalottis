@@ -1057,3 +1057,16 @@ input[type="checkbox"]:focus {
 .heading-1 {
   font-size: 4.5em;
 }
+
+@media screen and (max-width:512px) {
+  .sedie-chairs {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .chair-label {
+    color: #000;
+    text-align: center;
+    display: block;
+  }
+}

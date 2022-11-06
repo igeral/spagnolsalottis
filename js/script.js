@@ -56,9 +56,9 @@ document.addEventListener("scroll", () => {
 //   sendEmail();
 // });
 
-// showform.addEventListener("click", () => {
-//   form.classList.toggle("cont-form-show");
-// });
+showform.addEventListener("click", () => {
+  form.classList.toggle("cont-form-show");
+});
 
 const showMenu = (headerToggle) => {
   const toggleBtn = document.getElementById(headerToggle);
