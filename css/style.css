@@ -26,6 +26,8 @@ body {
   width: 100vw !important;
   top: 0;
   z-index: 10;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .bg-black {
@@ -819,6 +821,7 @@ input[type="checkbox"]:focus {
 #scarica-div {
   display: flex;
   justify-content: center;
+  margin-top: 15rem;
 }
 
 .d-flex.catlog-link {
@@ -1119,4 +1122,8 @@ input[type="checkbox"]:focus {
 
 .vertical-chair {
   width: 100%;
+}
+
+.row.margin--top-50 {
+  margin-top: 3rem !important;
 }
