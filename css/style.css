@@ -70,12 +70,12 @@ a:hover {
 }
 
 .menuOpen {
-  color: #000;
+  color: #000 !important;
   font-size: 1rem;
 }
 
 .menuitem {
-  color: #000;
+  color: #000 !important;
   font-weight: 600;
   font-size: 20px;
 }
@@ -87,7 +87,7 @@ a:hover {
 
 .menuOpen:hover,
 .menuitem:hover {
-  color: #000;
+  color: #000 !important;
 }
 
 .d-flex.column {
