@@ -6,8 +6,7 @@ const fb = document.querySelectorAll(".fb");
 const icon = document.querySelectorAll(".icon");
 const openMenu = document.querySelector(".menuOpen");
 const cancel = document.querySelector(".fa-times");
-const showform = document.querySelector(".show-form");
-const form = document.querySelector(".cont-form");
+
 
 openMenu.addEventListener("click", () => {
   overlay.classList.toggle("showmenu");
@@ -56,9 +55,6 @@ document.addEventListener("scroll", () => {
 //   sendEmail();
 // });
 
-showform.addEventListener("click", () => {
-  form.classList.toggle("cont-form-show");
-});
 
 const showMenu = (headerToggle) => {
   const toggleBtn = document.getElementById(headerToggle);

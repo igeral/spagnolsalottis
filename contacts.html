@@ -390,6 +390,13 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./js/script.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    const showform = document.querySelector(".show-form");
+    const form = document.querySelector(".cont-form");
+    showform.addEventListener("click", () => {
+      form.classList.toggle("cont-form-show");
+    });
+  </script>
 </body>
 
 </html>
