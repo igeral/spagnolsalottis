@@ -468,6 +468,14 @@ footer>.socialsf>.icon>.fb {
 /* .mobilefooter.d-flex>.socialsf {
   justify-content: flex-start;
 } */
+.Mobileview>.bg-black>.container-fluid>.navbar-brand>a {
+  font-size: 16px;
+}
+
+.Mobileview>.bg-black>.container-fluid>.navbar-brand {
+  gap: 10px;
+  display: flex;
+}
 
 footer>.Sociallogo>.socialsf>.facebook>.fb:hover {
   background-color: #1da1f2;
@@ -508,7 +516,7 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
 
 .page-title {
   margin: 10% 10% 5% 10%;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .banner,
@@ -583,7 +591,8 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
 .contact-info.d-flex {
   justify-content: center;
   gap: 10%;
-  margin-top: 50px;
+  width: 80%;
+  margin: 50px auto;
   flex-direction: column;
 }
 
@@ -593,7 +602,7 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 15%;
 }
 
 .buttons {
@@ -707,7 +716,7 @@ form {
 
 .contact-head {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .confirm {
@@ -1028,7 +1037,7 @@ input[type="checkbox"]:focus {
   top: 0;
   left: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   background-color: #fff;
   margin: 0;
   height: 100vh;
@@ -1151,4 +1160,57 @@ input[type="checkbox"]:focus {
   .left-section {
     display: none;
   }
+}
+
+.side-popup {
+  /* width: 14%; */
+  position: fixed;
+  left: 0;
+  top: 50%;
+}
+
+.side-popup ul li {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+
+}
+
+.side-popup ul {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background-color: #ebebeb;
+}
+
+.stores a,
+.catalogh a,
+.contact a {
+  color: #000;
+  display: flex;
+  gap: 15px;
+}
+
+.side-label {
+  display: none;
+}
+
+.side-popup ul:hover .side-label {
+  display: block;
+}
+
+.side-popup ul:hover {
+  background-color: #000;
+}
+
+.side-popup ul:hover .stores a {
+  color: #fff;
+}
+
+.side-popup ul:hover .catalogh a {
+  color: #fff;
+}
+
+.side-popup ul:hover .contact a {
+  color: #fff;
 }
