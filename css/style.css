@@ -1136,6 +1136,26 @@ input[type="checkbox"]:focus {
   margin-top: 3rem !important;
 }
 
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 212px;
+  overflow: scroll;
+  max-height: 100%;
+}
+
+.left-section {
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+}
+
+.left-section::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (min-width: 513px) {
   .sedie-inner {
     grid-template-columns: 1fr 2fr;
@@ -1199,18 +1219,57 @@ input[type="checkbox"]:focus {
   display: block;
 }
 
-.side-popup ul:hover {
-  background-color: #000;
+.side-popup ul li:hover {
+  background-color: #1f1f1f;
 }
 
-.side-popup ul:hover .stores a {
+.stores a:hover {
   color: #fff;
 }
 
-.side-popup ul:hover .catalogh a {
+.catalogh a:hover {
   color: #fff;
 }
 
-.side-popup ul:hover .contact a {
+.contact a:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .side-popup {
+    width: 100%;
+    position: relative;
+    margin: 5% 0;
+  }
+
+  .side-label {
+    display: block;
+  }
+
+  .side-popup ul li {
+    padding: 10px 25px;
+  }
+}
+
+.extra-image>img {
+  width: 50%;
+}
+
+.extra-image {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .extra-image>img {
+    width: 100%;
+  }
+
+  .extra-image {
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+  }
 }
