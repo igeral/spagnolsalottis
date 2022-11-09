@@ -607,6 +607,8 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
 
 .buttons {
   margin-top: 17px;
+  gap: 18%;
+  margin-left: 2%;
 }
 
 .number,
