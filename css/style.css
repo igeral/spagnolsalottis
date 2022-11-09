@@ -1272,4 +1272,12 @@ input[type="checkbox"]:focus {
     gap: 20px;
     margin: 0;
   }
+
+  #scarica-div {
+    margin-top: -2rem;
+  }
+
+  .heading-1 {
+    font-size: 3.8em;
+  }
 }
