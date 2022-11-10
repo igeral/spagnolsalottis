@@ -103,7 +103,7 @@ a:hover {
 
 .overlay-nav {
   width: 100vw;
-  height: 40%;
+  height: 0;
   background-color: #fff;
   color: #000;
   transition: top 550ms, opacity 550ms;
@@ -121,7 +121,7 @@ a:hover {
 .showmenu {
   /* transform: translateY(33px) scale(1); */
   /* top: 100px; */
-
+  height: 40%;
   opacity: 1;
   z-index: 12;
 }
@@ -1141,9 +1141,10 @@ input[type="checkbox"]:focus {
 .left-section {
   display: flex;
   flex-direction: column;
-  gap: 212px;
+  gap: 250px;
   overflow: scroll;
   max-height: 100%;
+  height: 62vh;
 }
 
 .left-section {
