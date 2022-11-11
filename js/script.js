@@ -6,7 +6,7 @@ const fb = document.querySelectorAll(".fb");
 const icon = document.querySelectorAll(".icon");
 const openMenu = document.querySelector(".menuOpen");
 const cancel = document.querySelector(".fa-times");
-
+const text = document.querySelector(".fr2")
 
 openMenu.addEventListener("click", () => {
   overlay.classList.toggle("showmenu");
@@ -18,43 +18,6 @@ openMenu.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
   overlay.classList.remove("showmenu");
 });
-// function sendEmail() {
-//   Email.send({
-//     // SecureToken: "885e77be-3730-4a22-b70a-8dd7151a842b",
-//     Host: "smtp.elasticemail.com",
-//     Username: "geraldegbuna07@gmail.com",
-//     // Password: "073767CDA3126FDD7B2E27568A5AAFDF1E18",
-//     Password: "3FFB6770777FC6C12ABFCEDAA89525471729",
-//     To: "ogoayorindeshekinah@gmail.com",
-//     From: document.getElementById("email").value,
-//     Subject: "Contact form enquiry",
-//     Body:
-//       "Name: " +
-//       document.getElementById("name").value +
-//       "<br> Cognome: " +
-//       document.getElementById("surname") +
-//       "<br> Phone no: " +
-//       document.getElementById("number").value +
-//       "<br> Request: " +
-//       document.getElementById("request").value,
-//   }).then(swal("Submited successfully"));
-
-//   console.log(
-//     "Name: " +
-//       document.getElementById("name").value +
-//       "<br> Cognome: " +
-//       document.getElementById("surname") +
-//       "<br> Phone no: " +
-//       document.getElementById("number").value +
-//       "<br> Request: " +
-//       document.getElementById("request").value
-//   );
-// }
-// document.getElementById("submit").addEventListener("click", (e) => {
-//   e.preventDefault();
-//   sendEmail();
-// });
-
 
 const showMenu = (headerToggle) => {
   const toggleBtn = document.getElementById(headerToggle);
@@ -81,4 +44,16 @@ document.querySelector(".backone").addEventListener("click", (e) => {
   document.querySelector(".items").style.transitionDuration = "0.5s";
 });
 
+var scrollTriggerAnimation = 60;
+var minHeight = 1024
 
+window.onscroll = function () {
+  if (window.scrollY >= scrollTriggerAnimation && screen.width >= minHeight) {
+    text.classList.add('scroll')
+    console.log('scroll')
+  } else {
+    text.classList.remove('scroll')
+  }
+
+}
+console.log(window.scrollY)

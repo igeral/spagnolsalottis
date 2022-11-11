@@ -1128,6 +1128,8 @@ input[type="checkbox"]:focus {
   display: grid;
   margin-top: 10rem;
   margin-left: 4rem;
+  margin-bottom: 10rem;
+  height: calc(100vh - 350px);
 }
 
 .vertical-chair {
@@ -1144,7 +1146,8 @@ input[type="checkbox"]:focus {
   gap: 250px;
   overflow: scroll;
   max-height: 100%;
-  height: 62vh;
+  justify-content: center;
+  /* height: 62vh; */
 }
 
 .left-section {
@@ -1178,6 +1181,7 @@ input[type="checkbox"]:focus {
   .sedie-inner {
     grid-template-rows: 1fr 2fr;
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   .left-section {
@@ -1186,7 +1190,6 @@ input[type="checkbox"]:focus {
 }
 
 .side-popup {
-  /* width: 14%; */
   position: fixed;
   left: 0;
   top: 50%;
@@ -1282,5 +1285,48 @@ input[type="checkbox"]:focus {
 
   .heading-1 {
     font-size: 3.8em;
+  }
+}
+
+.fr2 {
+  position: fixed;
+  right: 25%;
+  top: 45%;
+  text-align: left;
+}
+
+.scroll {
+  /* top: auto; */
+  position: absolute;
+}
+
+.fr2>div>p {
+  font-size: 21px;
+}
+
+/* .fr2>div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+} */
+
+.extra-image.image {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0;
+}
+
+.extra-image.image>img {
+  width: 100%;
+}
+
+@media screen and (max-width: 512px) {
+  .fr2 {
+    position: static;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
 }
