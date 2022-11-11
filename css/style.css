@@ -1322,11 +1322,47 @@ input[type="checkbox"]:focus {
   width: 100%;
 }
 
-@media screen and (max-width: 512px) {
+.firstdiv.d-flex,
+.seconddiv.d-flex {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.firstdiv.d-flex {
+  margin: 0 9rem;
+  ;
+}
+
+.seconddiv.d-flex {
+  margin: 0 6rem;
+}
+
+.col-lg-6 {
+  padding: 0 3rem;
+
+}
+
+.col-lg-6 img {
+  width: 80%;
+}
+
+@media screen and (max-width: 1023px) {
   .fr2 {
     position: static;
     display: flex;
     text-align: center;
     justify-content: center;
+  }
+
+  .firstdiv.d-flex,
+  .seconddiv.d-flex {
+    flex-direction: column-reverse;
+    margin: 0;
+    text-align: center;
+  }
+
+  .col-lg-6 {
+    padding: 0 1rem;
   }
 }
