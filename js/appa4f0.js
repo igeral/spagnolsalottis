@@ -896,7 +896,7 @@ App = {
     });
 
     doc.on("keyup", ".search form input", function () {
-      var text = $(this).val();
+      var texts = $(this).val();
       var typingTimer;
       if (text.length >= 3) {
         clearTimeout(typingTimer);

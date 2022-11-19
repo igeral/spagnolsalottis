@@ -281,7 +281,7 @@
         <div class="fr2"></div>
     </section>
     <div class="extra-image">
-        <img src="./images/Sito Salotti/POLTRONCINE/Margot/MARGOT_GRANDE.jpg" alt="">
+        <img src="./images/Sito Salotti/POLTRONCINE/Margot/MARGOT_GRANDE.jpg" alt="" class="thirdimg">
         <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_GRANDE.jpg" alt=""> -->
     </div>
     <section class="side-popup">
@@ -395,6 +395,69 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+    <script type="text/javascript">
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDU1ssJmkcZ2zsQTTLYOJucMfoc7_JrDB0",
+            authDomain: "spagnolcms-8f475.firebaseapp.com",
+            databaseURL: "https://spagnolcms-8f476.firebaseio.com/",
+            projectId: "spagnolcms-8f475",
+            storageBucket: "spagnolcms-8f475.appspot.com",
+            messagingSenderId: "430860921413",
+            appId: "1:430860921413:web:bd9e14cd251cd0e1b0112c",
+            measurementId: "G-VMHJKFFL5R"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+        firebase.analytics();
+
+
+        const database = firebase.database();
+        const usersRef = database.ref('/Potroncinii');
+
+
+
+
+        var firstImg = document.querySelectorAll(".firstimg");
+        var secondImg = document.querySelectorAll(".secondimg");
+        var thirdImg = document.querySelector(".thirdimg");
+        // var fourthImg = document.querySelector(".fourthimg");
+
+
+        // var texts = document.querySelector(".firstsmalltext")
+
+        firebase.database().ref('Potroncini/MargotImg').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            firstImg.forEach(img => img.src = myImg1)
+        });
+        firebase.database().ref('Potroncini/MargotImg2').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            secondImg.forEach(img => img.src = myImg1)
+        });
+        firebase.database().ref('Potroncini/MargotImg3').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            thirdImg.src = myImg1;
+        });
+        // firebase.database().ref('Potroncini/MargotImg4').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     fourthImg.src = myImg1;
+        // });
+
+        // firebase.database().ref('Potroncini/Margotsmalltext1').on('value', function (snapshot) {
+        //     var myContent = snapshot.val().Content;
+        //     texts.textContent = myContent
+        // });
+
+    </script>
 </body>
 
 </html>

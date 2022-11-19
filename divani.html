@@ -420,10 +420,10 @@
       <li class="wrapperImg">
         <a href="zero80.html">
           <div>
-            <img loading="lazy" class="ninteenImg" src="./images/Sito Salotti/DIVANI/Zero 80/foto_8600_lunga.jpg"
+            <img loading="lazy" class="nineteenImg" src="./images/Sito Salotti/DIVANI/Zero 80/foto_8600_lunga.jpg"
               alt="Zero 80" />
           </div>
-          <span class="t-medium ninteenImgcontent">Zero 80</span>
+          <span class="t-medium nineteenImgcontent">Zero 80</span>
         </a>
       </li>
     </ul>
@@ -515,6 +515,271 @@
     <a class="iGeraldm">website by iGerald</a>
   </footer>
   <script src="./js/script.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+  <script type="text/javascript">
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyDU1ssJmkcZ2zsQTTLYOJucMfoc7_JrDB0",
+      authDomain: "spagnolcms-8f475.firebaseapp.com",
+      databaseURL: "https://spagnolcms-8f476.firebaseio.com/",
+      projectId: "spagnolcms-8f475",
+      storageBucket: "spagnolcms-8f475.appspot.com",
+      messagingSenderId: "430860921413",
+      appId: "1:430860921413:web:bd9e14cd251cd0e1b0112c",
+      measurementId: "G-VMHJKFFL5R"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
+    firebase.analytics();
+
+
+    const database = firebase.database();
+    const usersRef = database.ref('/Divani');
+
+
+
+
+    var firstImg = document.querySelector(".firstImg");
+    var secondImg = document.querySelector(".secondImg");
+    var thirdImg = document.querySelector(".thirdImg");
+    var fourthImg = document.querySelector(".fourthImg");
+    var fifthImg = document.querySelector(".fifthImg");
+    var sixthImg = document.querySelector(".sixthImg");
+    var seventhImg = document.querySelector(".seventhImg");
+    var eightImg = document.querySelector(".eightImg");
+    var ninthImg = document.querySelector(".ninthImg");
+    var tenthImg = document.querySelector(".tenthImg");
+    var elevenImg = document.querySelector(".elevenImg");
+    var twelveImg = document.querySelector(".twelveImg");
+    var thirteenImg = document.querySelector(".thirteenImg");
+    var fourteenImg = document.querySelector(".fourteenImg");
+    var fifteenImg = document.querySelector(".fifteenImg");
+    var sixteenImg = document.querySelector(".sixteenImg");
+    var seventeenImg = document.querySelector(".seventeenImg");
+    var eighteenImg = document.querySelector(".eighteenImg");
+    var nineteenImg = document.querySelector(".nineteenImg");
+
+
+    var firstImgcontent = document.querySelector(".firstImgcontent");
+    var secondImgcontent = document.querySelector(".secondImgcontent");
+    var thirdImgcontent = document.querySelector(".thirdImgcontent");
+    var fourthImgcontent = document.querySelector(".fourthImgcontent");
+    var fifthImgcontent = document.querySelector(".fifthImgcontent");
+    var sixthImgcontent = document.querySelector(".sixthImgcontent");
+    var seventhImgcontent = document.querySelector(".seventhImgcontent");
+    var eightImgcontent = document.querySelector(".eightImgcontent");
+    var ninthImgcontent = document.querySelector(".ninthImgcontent");
+    var tenthImgcontent = document.querySelector(".tenthImgcontent");
+    var elevenImgcontent = document.querySelector(".elevenImgcontent");
+    var twelveImgcontent = document.querySelector(".twelveImgcontent");
+    var thirteenImgcontent = document.querySelector(".thirteenImgcontent");
+    var fourteenImgcontent = document.querySelector(".fourteenImgcontent");
+    var fifteenImgcontent = document.querySelector(".fifteenImgcontent");
+    var sixteenImgcontent = document.querySelector(".sixteenImgcontent");
+    var seventeenImgcontent = document.querySelector(".seventeenImgcontent");
+    var eighteenImgcontent = document.querySelector(".eighteenImgcontent");
+    var nineteenImgcontent = document.querySelector(".nineteenImgcontent");
+
+
+    firebase.database().ref('Divani/DivaniImg').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      firstImg.src = myImg1;
+    });
+    firebase.database().ref('Divani/DivaniImg2').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      secondImg.src = myImg1;
+    });
+    firebase.database().ref('Divani/DivaniImg3').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      thirdImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg4').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      fourthImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg5').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      fifthImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg6').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      sixthImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg7').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      seventhImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg8').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      eightImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg9').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      ninthImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg10').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      tenthImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg11').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      elevenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg12').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      twelveImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg13').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      thirteenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg14').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      fourteenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg15').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      fifteenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg16').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      sixteenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg17').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      seventeenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg18').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      eighteenImg.src = myImg1;
+    });
+
+    firebase.database().ref('Divani/DivaniImg19').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      nineteenImg.src = myImg1;
+    });
+
+
+
+
+
+    firebase.database().ref('Divani/Divanitext').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      firstImgcontent.textContent = myContent
+    });
+    firebase.database().ref('Divani/Divanitext2').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      secondImgcontent.textContent = myContent
+    });
+    firebase.database().ref('Divani/Divanitext3').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      thirdImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext4').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      fourthImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext5').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      fifthImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext6').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      sixthImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext7').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      seventhImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext8').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      eightImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext9').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      ninthImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext10').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      tenthImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext11').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      elevenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext12').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      twelveImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext13').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      thirteenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext14').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      fourteenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext15').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      fifteenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext16').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      sixteenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext17').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      seventeenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext18').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      eighteenImgcontent.textContent = myContent
+    });
+
+    firebase.database().ref('Divani/Divanitext19').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      nineteenImgcontent.textContent = myContent
+    });
+
+  </script>
 </body>
 
 </html>

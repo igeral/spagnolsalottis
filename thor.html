@@ -257,14 +257,14 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Thor.jpg" alt="Thor" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/THOR.jpg" alt="Thor" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/Thor.jpg" class="d-block w-80 firstimg" alt="...">
+                    <img src="./images/Sito Salotti/COMPLEMENTI/THOR.jpg" class="d-block w-80 firstimg" alt="...">
                 </div>
                 <!-- <div class="carousel-item">
                     <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" class="d-block w-80 secondimg"
@@ -395,6 +395,77 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+    <script type="text/javascript">
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyDU1ssJmkcZ2zsQTTLYOJucMfoc7_JrDB0",
+            authDomain: "spagnolcms-8f475.firebaseapp.com",
+            databaseURL: "https://spagnolcms-8f476.firebaseio.com/",
+            projectId: "spagnolcms-8f475",
+            storageBucket: "spagnolcms-8f475.appspot.com",
+            messagingSenderId: "430860921413",
+            appId: "1:430860921413:web:bd9e14cd251cd0e1b0112c",
+            measurementId: "G-VMHJKFFL5R"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+        firebase.analytics();
+
+
+        const database = firebase.database();
+        const usersRef = database.ref('/Complementi');
+
+
+
+
+        var firstImg = document.querySelectorAll(".firstimg");
+        // var secondImg = document.querySelector(".secondimg");
+        // var thirdImg = document.querySelectorAll(".thirdimg");
+        // var fourthImg = document.querySelector(".fourthimg");
+
+
+        var firsttext = document.querySelector(".firsttext")
+        var secondtext = document.querySelector(".secondtext")
+
+
+        firebase.database().ref('Complementi/THORImg').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            firstImg.forEach(img => img.src = myImg1)
+        });
+        // firebase.database().ref('Complementi/THORImg2').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     secondImg.forEach(img => img.src = myImg1)
+        // });
+        // firebase.database().ref('Complementi/THORImg3').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     thirdImg.forEach(img => img.src = myImg1)
+
+        // });
+        // firebase.database().ref('Complementi/THORImg4').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     fourthImg.src = myImg1;
+
+        // });
+
+        firebase.database().ref('Complementi/THORh1').on('value', function (snapshot) {
+            var myContent = snapshot.val().Content;
+            firsttext.textContent = myContent
+        });
+        firebase.database().ref('Complementi/THORp').on('value', function (snapshot) {
+            var myContent = snapshot.val().Content;
+            secondtext.textContent = myContent
+        });
+
+    </script>
 </body>
 
 </html>
