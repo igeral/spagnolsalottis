@@ -1129,7 +1129,7 @@ input[type="checkbox"]:focus {
   overflow: scroll;
   max-height: 100%;
   justify-content: center;
-  min-height: 62vh;
+  /* min-height: 62vh; */
 }
 
 .left-section {
