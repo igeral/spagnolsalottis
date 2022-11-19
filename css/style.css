@@ -1115,7 +1115,7 @@ input[type="checkbox"]:focus {
 }
 
 .vertical-chair {
-  width: 100%;
+  width: 130%;
 }
 
 .row.margin--top-50 {
@@ -1129,7 +1129,7 @@ input[type="checkbox"]:focus {
   overflow: scroll;
   max-height: 100%;
   justify-content: center;
-  /* height: 62vh; */
+  min-height: 62vh;
 }
 
 .left-section {
