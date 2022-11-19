@@ -257,7 +257,7 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Top Basso.jpg" alt="Topbasso" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/Top Basso.jpg" alt="TOPBASSO" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
@@ -458,30 +458,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/TopbassoImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TOPBASSOImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/TopbassoImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TOPBASSOImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/TopbassoImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TOPBASSOImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/TopbassoImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TOPBASSOImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Topbassoh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TOPBASSOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Topbassop').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TOPBASSOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

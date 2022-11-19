@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
-    <title>Inclinata</title>
+    <title>INCLINATA</title>
 </head>
 
 <body>
@@ -257,14 +257,14 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Inclinata.jpg" alt="Inclinata" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/INCLINATA.jpg" alt="INCLINATA" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/Inclinata.jpg" class="d-block w-80 firstimg" alt="...">
+                    <img src="./images/Sito Salotti/COMPLEMENTI/INCLINATA.jpg" class="d-block w-80 firstimg" alt="...">
                 </div>
                 <!-- <div class="carousel-item">
                     <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" class="d-block w-80 secondimg"
@@ -458,30 +458,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/InclinataImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/INCLINATAImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/InclinataImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/INCLINATAImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/InclinataImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/INCLINATAImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/InclinataImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/INCLINATAImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Inclinatah1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/INCLINATAh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Inclinatap').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/INCLINATAp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

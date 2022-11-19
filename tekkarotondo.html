@@ -462,30 +462,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/TekarotondoImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKAROTONDOImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/TekarotondoImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKAROTONDOImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/TekarotondoImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKAROTONDOImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/TekarotondoImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKAROTONDOImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Tekarotondoh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKAROTONDOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Tekarotondop').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKAROTONDOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

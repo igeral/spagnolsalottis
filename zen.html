@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
-    <title>Zen</title>
+    <title>ZEN</title>
 </head>
 
 <body>
@@ -257,14 +257,14 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Zen.jpg" alt="Zen" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/ZEN.jpg" alt="ZEN" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/Zen.jpg" class="d-block w-80 firstimg" alt="...">
+                    <img src="./images/Sito Salotti/COMPLEMENTI/ZEN.jpg" class="d-block w-80 firstimg" alt="...">
                 </div>
                 <!-- <div class="carousel-item">
                     <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" class="d-block w-80 secondimg"
@@ -456,30 +456,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/ZenImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZENImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/ZenImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZENImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/ZenImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZENImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/ZenImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZENImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Zenh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZENh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Zenp').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZENp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

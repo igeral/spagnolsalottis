@@ -257,7 +257,7 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/ZIppoRotondo.jpg" alt="zipporotondo"
+            <img src="./images/Sito Salotti/COMPLEMENTI/ZIPPOROTONDO.jpg" alt="ZIPPOROTONDO"
                 class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
@@ -265,7 +265,7 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/ZIppoRotondo.jpg" class="d-block w-80 firstimg"
+                    <img src="./images/Sito Salotti/COMPLEMENTI/ZIPPOROTONDO.jpg" class="d-block w-80 firstimg"
                         alt="...">
                 </div>
                 <!-- <div class="carousel-item">
@@ -466,38 +466,38 @@
 
 
 
-        firebase.database().ref('Complementi/ZipporotondoImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZIPPOROTONDOImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/ZipporotondoImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZIPPOROTONDOImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/ZipporotondoImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZIPPOROTONDOImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/ZipporotondoImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/ZIPPOROTONDOImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Zipporotondoh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZIPPOROTONDOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Zipporotondoh2').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZIPPOROTONDOh2').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Zipporotondop').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZIPPOROTONDOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             thirdtext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Zipporotondop2').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/ZIPPOROTONDOp2').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             fourthtext.textContent = myContent
         });

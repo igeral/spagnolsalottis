@@ -257,7 +257,7 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/happyisland2.jpg" alt="happyisland"
+            <img src="./images/Sito Salotti/COMPLEMENTI/HAPPYISLAND2.jpg" alt="HAPPYISLAND"
                 class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
@@ -265,7 +265,7 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/happyisland2.jpg" class="d-block w-80 firstimg"
+                    <img src="./images/Sito Salotti/COMPLEMENTI/HAPPYISLAND2.jpg" class="d-block w-80 firstimg"
                         alt="...">
                 </div>
                 <!-- <div class="carousel-item">
@@ -462,30 +462,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/HappyislandImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/HAPPYISLANDImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/HappyislandImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/HAPPYISLANDImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/HappyislandImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/HAPPYISLANDImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/HappyislandImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/HAPPYISLANDImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Happyislandh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/HAPPYISLANDh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Happyislandp').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/HAPPYISLANDp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
-    <title>Tekka</title>
+    <title>TEKKA</title>
 </head>
 
 <body>
@@ -257,7 +257,7 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Teka.jpg" alt="Tekka" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/Teka.jpg" alt="TEKKA" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
@@ -460,30 +460,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/TekkaImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKKAImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/TekkaImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKKAImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/TekkaImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKKAImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/TekkaImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/TEKKAImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Tekkah1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKKAh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Tekkap').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/TEKKAp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });

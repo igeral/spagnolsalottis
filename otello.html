@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
-    <title>Otello</title>
+    <title>OTELLO</title>
 </head>
 
 <body>
@@ -257,14 +257,14 @@
     </div>
     <section class="sedie-inner">
         <div class="left-section">
-            <img src="./images/Sito Salotti/COMPLEMENTI/Otelloù.jpg" alt="Otello" class="firstimg vertical-chair">
+            <img src="./images/Sito Salotti/COMPLEMENTI/OTELLOù.jpg" alt="OTELLO" class="firstimg vertical-chair">
             <!-- <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" alt="Adele"
                 class="secondimg vertical-chair"> -->
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/COMPLEMENTI/Otelloù.jpg" class="d-block w-80 firstimg" alt="...">
+                    <img src="./images/Sito Salotti/COMPLEMENTI/OTELLOù.jpg" class="d-block w-80 firstimg" alt="...">
                 </div>
                 <!-- <div class="carousel-item">
                     <img src="./images/Sito Salotti/POLTRONCINE/Adele/ADELE_LATO.jpg" class="d-block w-80 secondimg"
@@ -460,30 +460,30 @@
         var secondtext = document.querySelector(".secondtext")
 
 
-        firebase.database().ref('Complementi/OtelloImg').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/OTELLOImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        // firebase.database().ref('Complementi/OtelloImg2').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/OTELLOImg2').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     secondImg.forEach(img => img.src = myImg1)
         // });
-        // firebase.database().ref('Complementi/OtelloImg3').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/OTELLOImg3').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     thirdImg.forEach(img => img.src = myImg1)
 
         // });
-        // firebase.database().ref('Complementi/OtelloImg4').on('value', function (snapshot) {
+        // firebase.database().ref('Complementi/OTELLOImg4').on('value', function (snapshot) {
         //     var myImg1 = snapshot.val().Link;
         //     fourthImg.src = myImg1;
 
         // });
 
-        firebase.database().ref('Complementi/Otelloh1').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/OTELLOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
-        firebase.database().ref('Complementi/Otellop').on('value', function (snapshot) {
+        firebase.database().ref('Complementi/OTELLOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             secondtext.textContent = myContent
         });
