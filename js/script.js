@@ -20,15 +20,15 @@ document.addEventListener("scroll", () => {
 });
 
 const showMenu = (headerToggle) => {
-  const toggleBtn = document.getElementById(headerToggle);
+  const toggleBtn = document.querySelectorAll(headerToggle);
   // Validate that variables exist
-  toggleBtn.addEventListener("click", () => {
+  toggleBtn.forEach(btn => btn.addEventListener("click", () => {
     // change icon
     toggleBtn.classList.toggle("bx-x");
     document.querySelector(".menuMobile").classList.toggle("left");
-  });
+  }));
 };
-showMenu("header-toggle");
+showMenu("#header-toggle");
 document.querySelector(".hasDropDown").addEventListener("click", (e) => {
   e.preventDefault();
   document.querySelector(".menue").style.transform = "translateX(-100%)";

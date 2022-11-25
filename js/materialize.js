@@ -8167,7 +8167,7 @@ var $jscomp$this = this;
         {
           key: "selectOption",
           value: function selectOption(el) {
-            var texts = el.text().trim();
+            var text = el.text().trim();
             this.el.value = text;
             this.$el.trigger("change");
             this._resetAutocomplete();
@@ -8589,7 +8589,7 @@ var $jscomp$this = this;
       }
     });
 
-    var texts_area_selector = ".materialize-textarea";
+    var text_area_selector = ".materialize-textarea";
     $(text_area_selector).each(function () {
       var $textarea = $(this);
       /**
@@ -14466,7 +14466,7 @@ var $jscomp$this = this;
 
             options.each(function (el) {
               if ($(el).prop("selected")) {
-                var texts = $(el).text();
+                var text = $(el).text();
                 values.push(text);
               }
             });

@@ -227,8 +227,9 @@ a:hover {
 
 @media screen and (max-width: 512px) {
   .fb {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    font-size: 27px;
   }
 }
 
@@ -656,6 +657,12 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
   height: calc(100% + 27px);
 }
 
+@media screen and (max-width:450px) {
+  #close {
+    width: 7rem;
+  }
+}
+
 .cont-form {
   /* display: flex; */
   display: none;
@@ -1004,6 +1011,16 @@ input[type="checkbox"]:focus {
   color: white;
   width: 100vw;
   height: 800px;
+}
+
+@media screen and (min-width:736px) and (max-width: 1023px) {
+  .languages {
+    height: 812px;
+  }
+
+  .socialsf {
+    justify-content: flex-start;
+  }
 }
 
 .left {
