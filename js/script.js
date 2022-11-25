@@ -24,7 +24,7 @@ const showMenu = (headerToggle) => {
   // Validate that variables exist
   toggleBtn.forEach(btn => btn.addEventListener("click", () => {
     // change icon
-    toggleBtn.classList.toggle("bx-x");
+    btn.classList.toggle("bx-x");
     document.querySelector(".menuMobile").classList.toggle("left");
   }));
 };
