@@ -1131,9 +1131,9 @@ input[type="checkbox"]:focus {
   /* height: calc(100vh - 350px); */
 }
 
-/* .vertical-chair {
-  width: 130%;
-} */
+.vertical-chair {
+  width: 100%;
+}
 
 .row.margin--top-50 {
   margin-top: 3rem !important;
