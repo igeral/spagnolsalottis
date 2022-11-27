@@ -71,4 +71,34 @@ function reveal() {
   }
 }
 
+function revealleft() {
+  var revealsleft = document.querySelectorAll(".revealleft");
+  for (var i = 0; i < revealsleft.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealsleft[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      revealsleft[i].classList.add("active");
+    } else {
+      revealsleft[i].classList.remove("active");
+    }
+  }
+}
+
+function revealright() {
+  var revealsright = document.querySelectorAll(".revealright");
+  for (var i = 0; i < revealsright.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = revealsright[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      revealsright[i].classList.add("active");
+    } else {
+      revealsright[i].classList.remove("active");
+    }
+  }
+}
+
 window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", revealleft);
+window.addEventListener("scroll", revealright);
