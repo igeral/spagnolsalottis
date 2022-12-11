@@ -1394,7 +1394,7 @@ input[type="checkbox"]:focus {
 /* index animation */
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(50px);
   opacity: 0;
   transition: 1s all ease;
 }
