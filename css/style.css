@@ -1395,7 +1395,7 @@ input[type="checkbox"]:focus {
 .reveal {
   position: relative;
   transform: translateY(50px);
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1s all ease;
 }
 
@@ -1407,7 +1407,7 @@ input[type="checkbox"]:focus {
 .revealright {
   position: relative;
   transform: translateX(150px);
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1s all ease;
 }
 
