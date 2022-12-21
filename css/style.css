@@ -1432,3 +1432,9 @@ input[type="checkbox"]:focus {
 .t-medium {
   text-transform: uppercase;
 }
+
+.banner-sedie.poctroncine {
+  background-image: url('../images/Sito Salotti/POLTRONCINE/Leo/back.jpg');
+  height: 500px;
+  background-position-y: center;
+}
