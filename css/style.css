@@ -1086,6 +1086,7 @@ input[type="checkbox"]:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 5%;
+  grid-row-gap: 20px;
 }
 
 .chair-img {
