@@ -1427,3 +1427,8 @@ input[type="checkbox"]:focus {
   opacity: 0;
   transition: 1s all ease;
 }
+
+/* uppercase text */
+.t-medium {
+  text-transform: uppercase;
+}

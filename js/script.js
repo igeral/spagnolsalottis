@@ -48,6 +48,7 @@ var scrollTriggerAnimation = 60;
 var minHeight = 1024
 
 window.onscroll = function () {
+  if (!text) return;
   if (window.scrollY >= scrollTriggerAnimation && screen.width >= minHeight) {
     text.classList.add('scroll')
     console.log('scroll')
