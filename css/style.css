@@ -385,7 +385,7 @@ a:hover {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 50px;
-  margin-top: 12rem;
+  margin-top: 8rem;
   justify-content: center;
 }
 
@@ -1171,9 +1171,9 @@ input[type="checkbox"]:focus {
     grid-template-columns: 1fr 2fr;
   }
 
-  .carousel.slide {
+  /* .carousel.slide {
     display: none;
-  }
+  } */
 }
 
 .w-80 {
@@ -1438,4 +1438,9 @@ input[type="checkbox"]:focus {
   background-image: url('../images/Sito Salotti/POLTRONCINE/Leo/back.jpg');
   height: 500px;
   background-position-y: center;
+}
+
+/* header slider */
+.h600 {
+  height: 600px;
 }
