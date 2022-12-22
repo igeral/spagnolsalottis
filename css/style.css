@@ -385,7 +385,7 @@ a:hover {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 50px;
-  margin-top: 8rem;
+  margin-top: 4rem;
   justify-content: center;
 }
 
@@ -1441,6 +1441,19 @@ input[type="checkbox"]:focus {
 }
 
 /* header slider */
-.h600 {
-  height: 600px;
+@media screen and (max-width: 1023px) {
+  .h600 {
+    height: 150px;
+  }
+
+  .t7 {
+    margin-top: 7rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .h600 {
+    height: 600px;
+  }
 }
