@@ -436,19 +436,19 @@
 
         // var texts = document.querySelector(".firstsmalltext")
 
-        firebase.database().ref('Potroncini/PoufImg').on('value', function (snapshot) {
+        firebase.database().ref('Potroncini/PoufsImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.forEach(img => img.src = myImg1)
         });
-        firebase.database().ref('Potroncini/PoufImg2').on('value', function (snapshot) {
+        firebase.database().ref('Potroncini/PoufsImg2').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             secondImg.forEach(img => img.src = myImg1)
         });
-        firebase.database().ref('Potroncini/PoufImg3').on('value', function (snapshot) {
+        firebase.database().ref('Potroncini/PoufsImg3').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             thirdImg.src = myImg1;
         });
-        firebase.database().ref('Potroncini/PoufImg4').on('value', function (snapshot) {
+        firebase.database().ref('Potroncini/PoufsImg4').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             fourthImg.src = myImg1;
         });
