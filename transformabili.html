@@ -256,22 +256,22 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide t7" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./images/Sito Salotti/TRASFORMABILI/DENVER_APERTO.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/DENVER_APERTO.jpg" class="d-block w-100 h600 img1" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/TRASFORMABILI/DENVER_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/DENVER_GRANDE.jpg" class="d-block w-100 h600 img2" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/TRASFORMABILI/MIAMI_APERTO.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/MIAMI_APERTO.jpg" class="d-block w-100 h600 img3" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/TRASFORMABILI/MIAMI_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/MIAMI_GRANDE.jpg" class="d-block w-100 h600 img4" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/TRASFORMABILI/SIDNAY_APERTO.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/SIDNAY_APERTO.jpg" class="d-block w-100 h600 img5" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/TRASFORMABILI/SIDNEY_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/TRASFORMABILI/SIDNEY_GRANDE.jpg" class="d-block w-100 h600 img6" alt="...">
       </div>
     </div>
   </div>
@@ -508,6 +508,12 @@
     var seventhImg = document.querySelector(".seventhImg");
     var eightImg = document.querySelector(".eightImg");
     var ninthImg = document.querySelector(".ninthImg");
+    var img1 = document.querySelector(".img1");
+    var img2 = document.querySelector(".img2");
+    var img3 = document.querySelector(".img3");
+    var img4 = document.querySelector(".img4");
+    var img5 = document.querySelector(".img5");
+    var img6 = document.querySelector(".img6");
 
 
     var firsttext = document.querySelector(".firsttext");
@@ -520,7 +526,30 @@
     var eighttext = document.querySelector(".eighttext");
     var ninthtext = document.querySelector(".ninthtext");
 
-
+    firebase.database().ref('Transformabili/TRImgslide').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img1.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImgslide2').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img2.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImgslide3').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img3.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImgslide4').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img4.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImgslide5').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img5.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImgslide6').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img6.src = myImg1;
+    });
     firebase.database().ref('Transformabili/TRImg').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;
       firstImg.src = myImg1;

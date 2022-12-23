@@ -258,19 +258,19 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/Sito Salotti/COMPLEMENTI/BALTIMORA_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+          <img src="./images/Sito Salotti/COMPLEMENTI/BALTIMORA_GRANDE.jpg" class="d-block w-100 h600 img1" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/Sito Salotti/COMPLEMENTI/DALLAS_GRANDE-var.jpg" class="d-block w-100 h600" alt="...">
+          <img src="./images/Sito Salotti/COMPLEMENTI/DALLAS_GRANDE-var.jpg" class="d-block w-100 h600 img2" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/Sito Salotti/COMPLEMENTI/MAGIC_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+          <img src="./images/Sito Salotti/COMPLEMENTI/MAGIC_GRANDE.jpg" class="d-block w-100 h600 img3" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/Sito Salotti/COMPLEMENTI/OBELIX_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+          <img src="./images/Sito Salotti/COMPLEMENTI/OBELIX_GRANDE.jpg" class="d-block w-100 h600 img4" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/Sito Salotti/COMPLEMENTI/ZERO_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+          <img src="./images/Sito Salotti/COMPLEMENTI/ZERO_GRANDE.jpg" class="d-block w-100 h600 img5" alt="...">
         </div>
       </div>
     </div>
@@ -487,7 +487,11 @@
     var seventeenImg = document.querySelector(".seventeenImg");
     var eighteenImg = document.querySelector(".eighteenImg");
 
-
+    var img1 = document.querySelector(".img1");
+    var img2 = document.querySelector(".img2");
+    var img3 = document.querySelector(".img3");
+    var img4 = document.querySelector(".img4");
+    var img5 = document.querySelector(".img5");
 
 
     var firsttext = document.querySelector(".firsttext");
@@ -508,7 +512,26 @@
     var sixteentext = document.querySelector(".sixteentext");
     var seventeentext = document.querySelector(".seventeentext");
 
-
+    firebase.database().ref('Complementi/ComplementiImgslide').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img1.src = myImg1;
+    });
+    firebase.database().ref('Complementi/ComplementiImgslide2').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img2.src = myImg1;
+    });
+    firebase.database().ref('Complementi/ComplementiImgslide3').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img3.src = myImg1;
+    });
+    firebase.database().ref('Complementi/ComplementiImgslide4').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img4.src = myImg1;
+    });
+    firebase.database().ref('Complementi/ComplementiImgslide5').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img5.src = myImg1;
+    });
 
     firebase.database().ref('Complementi/ComplementiImg').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;

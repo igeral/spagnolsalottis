@@ -258,21 +258,24 @@
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./images/Sito Salotti/POLTRONCINE/BEA_GRANDE1.jpg" class="d-block w-100 h600" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/Sito Salotti/POLTRONCINE/EMMA_GRANDE1.jpg" class="d-block w-100 h600" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./images/Sito Salotti/POLTRONCINE/MAGIC-POUF_APERTO.jpg" class="d-block w-100 h600"
+                    <img src="./images/Sito Salotti/POLTRONCINE/BEA_GRANDE1.jpg" class="d-block w-100 h600 img1"
                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/Sito Salotti/POLTRONCINE/MAGIC-POUF_GRANDE.jpg" class="d-block w-100 h600"
+                    <img src="./images/Sito Salotti/POLTRONCINE/EMMA_GRANDE1.jpg" class="d-block w-100 h600 img2"
                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./images/Sito Salotti/POLTRONCINE/VENERE_GRANDE.jpg" class="d-block w-100 h600" alt="...">
+                    <img src="./images/Sito Salotti/POLTRONCINE/MAGIC-POUF_APERTO.jpg" class="d-block w-100 h600 img3"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Sito Salotti/POLTRONCINE/MAGIC-POUF_GRANDE.jpg" class="d-block w-100 h600 img4"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Sito Salotti/POLTRONCINE/VENERE_GRANDE.jpg" class="d-block w-100 h600 img5"
+                        alt="...">
                 </div>
             </div>
         </div>
@@ -477,7 +480,11 @@
         var elevenImg = document.querySelector(".elevenImg");
         var twelveImg = document.querySelector(".twelveImg");
         var thirteenImg = document.querySelector(".thirteenImg");
-
+        var img1 = document.querySelector(".img1");
+        var img2 = document.querySelector(".img2");
+        var img3 = document.querySelector(".img3");
+        var img4 = document.querySelector(".img4");
+        var img5 = document.querySelector(".img5");
 
 
 
@@ -496,7 +503,26 @@
         var thirteentext = document.querySelector(".thirteentext");
 
 
-
+        firebase.database().ref('Potroncini/PotronciniImgslide').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            img1.src = myImg1;
+        });
+        firebase.database().ref('Potroncini/PotronciniImgslide2').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            img2.src = myImg1;
+        });
+        firebase.database().ref('Potroncini/PotronciniImgslide3').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            img3.src = myImg1;
+        });
+        firebase.database().ref('Potroncini/PotronciniImgslide4').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            img4.src = myImg1;
+        });
+        firebase.database().ref('Potroncini/PotronciniImgslide5').on('value', function (snapshot) {
+            var myImg1 = snapshot.val().Link;
+            img5.src = myImg1;
+        });
         firebase.database().ref('Potroncini/PotronciniImg').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
             firstImg.src = myImg1;

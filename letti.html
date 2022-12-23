@@ -256,13 +256,13 @@
   <div id="carouselExampleSlidesOnly" class="carousel slide t7" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./images/Sito Salotti/LETTI/2016_01_27_1335.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/LETTI/2016_01_27_1335.jpg" class="d-block w-100 h600 img1" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/LETTI/2016_02_01_1386.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/LETTI/2016_02_01_1386.jpg" class="d-block w-100 h600 img2" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="./images/Sito Salotti/LETTI/ARTURO_VARIANTE.jpg" class="d-block w-100 h600" alt="...">
+        <img src="./images/Sito Salotti/LETTI/ARTURO_VARIANTE.jpg" class="d-block w-100 h600 img3" alt="...">
       </div>
     </div>
   </div>
@@ -571,6 +571,10 @@
     var thirteenImg = document.querySelector(".thirteenImg");
     var fourteenImg = document.querySelector(".fourteenImg");
     var fifteenImg = document.querySelector(".fifteenImg");
+    var img1 = document.querySelector(".img1");
+    var img2 = document.querySelector(".img2");
+    var img3 = document.querySelector(".img3");
+
 
 
 
@@ -590,7 +594,18 @@
     var fourteentext = document.querySelector(".fourteentext");
     var fifteentext = document.querySelector(".fifteentext");
 
-
+    firebase.database().ref('Letti/LettiImgslide').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img1.src = myImg1;
+    });
+    firebase.database().ref('Letti/LettiImgslide2').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img2.src = myImg1;
+    });
+    firebase.database().ref('Letti/LettiImgslide3').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      img3.src = myImg1;
+    });
     firebase.database().ref('Letti/LettiImg').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;
       firstImg.src = myImg1;
