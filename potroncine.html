@@ -562,7 +562,7 @@
 
 
 
-        firebase.database().ref('Potroncini/Potroncinitext').on('value', function (snapshot) {
+        firebase.database().ref('Potroncini/Potroncinitext1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
             firsttext.textContent = myContent
         });
