@@ -21,8 +21,8 @@
         <div class="container-fluid">
           <div class="navbar-brand">
             <ul class="language">
-              <li><a href="#">IT</a></li>
-              <li><a href="#">EN</a></li>
+              <li class="italian"><a href="#">IT</a></li>
+              <li class="english"><a href="#">EN</a></li>
               <li><a href="#">RU</a></li>
               <li><a href="#">ES</a></li>
               <li><a href="#">DE</a></li>
@@ -268,11 +268,17 @@
       <div class="column column-right">
         <img loading="lazy" class="firstSmallImg reveal" loading="lazy"
           src="./images/Sito Salotti/TRASFORMABILI/Dallas/DALLAS_PART-SCHIENALE.jpg" alt="Dallas" />
-        <p class="firstsmalltext description">
+        <p class="firstsmalltext description it">
           La testiera si fa più sottile, mantenendo la morbidezza con una
           forma sagomata leggermente bombata. Un’idea di elegante leggerezza
           ripresa e sviluppata dai piedini. Il piano è ortopedico in
           multistrato.
+        </p>
+        <p class="firstsmalltext description en hidetext ">
+          The headboard becomes thinner, maintaining its softness with a
+          slightly rounded shape. An idea of ​​elegant lightness
+          resumed and developed by the feet. The top is orthopedic in
+          multilayer.
         </p>
       </div>
     </div>
@@ -423,23 +429,23 @@
 
     var texts = document.querySelector(".firstsmalltext")
 
-    firebase.database().ref('Transformabili/DAfirstImg').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      firstImg.src = myImg1;
-    });
-    firebase.database().ref('Transformabili/DAfirstImg2').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      secondImg.src = myImg1;
-    });
-    firebase.database().ref('Transformabili/DAfirstImg3').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      thirdImg.src = myImg1;
-    });
+    // firebase.database().ref('Transformabili/DAfirstImg').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   firstImg.src = myImg1;
+    // });
+    // firebase.database().ref('Transformabili/DAfirstImg2').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   secondImg.src = myImg1;
+    // });
+    // firebase.database().ref('Transformabili/DAfirstImg3').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   thirdImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Transformabili/DAsmalltext1').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      texts.textContent = myContent
-    });
+    // firebase.database().ref('Transformabili/DAsmalltext1').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   texts.textContent = myContent
+    // });
 
   </script>
 </body>

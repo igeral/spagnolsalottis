@@ -103,3 +103,32 @@ function revealright() {
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", revealleft);
 window.addEventListener("scroll", revealright);
+
+
+const italian = document.querySelector('.it')
+const english = document.querySelector('.en')
+const engButton = document.querySelector('.english')
+const itButton = document.querySelector('.italian')
+localStorage.setItem('language', 'it')
+
+engButton.addEventListener('click', () => {
+  localStorage.setItem('language', 'en');
+
+})
+itButton.addEventListener('click', () => {
+  localStorage.setItem('language', 'it');
+
+})
+
+
+const currentLanguage = localStorage.getItem('language')
+
+if (currentLanguage === 'it') {
+  english.classList.add('hidetext')
+  italian.classList.remove('hidetext')
+}
+
+if (currentLanguage === 'en') {
+  english.classList.remove('hidetext')
+  italian.classList.add('hidetext')
+}

@@ -1460,3 +1460,7 @@ input[type="checkbox"]:focus {
   }
 
 }
+
+.hidetext {
+  display: none;
+}
