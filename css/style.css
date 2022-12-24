@@ -1080,7 +1080,7 @@ input[type="checkbox"]:focus {
   width: 80%;
 }
 
-/* poctroncine */
+/* POTRONCINI */
 .sedie-banner {
   width: 100%;
 }
@@ -1140,7 +1140,7 @@ input[type="checkbox"]:focus {
   margin-top: 10rem;
   margin-left: 4rem;
   /* margin-bottom: 10rem; */
-  /* height: calc(100vh - 350px); */
+  height: calc(100vh - 350px);
 }
 
 .vertical-chair {
