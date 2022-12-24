@@ -1140,6 +1140,9 @@ input[type="checkbox"]:focus {
   margin-top: 10rem;
   margin-left: 4rem;
   /* margin-bottom: 10rem; */
+}
+
+.calc100 {
   height: calc(100vh - 350px);
 }
 
