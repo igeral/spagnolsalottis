@@ -499,10 +499,6 @@ footer>.Sociallogo>.socialsf>.pinterest>.fb:hover {
   padding-left: 0;
 }
 
-.Sociallogo {
-  margin-top: 1%;
-}
-
 .Gruppo {
   display: flex;
   gap: 20px;
@@ -808,17 +804,24 @@ input[type="checkbox"]:focus {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 513px) {
-  .t-medium {
-    font-size: 1.2rem;
-  }
-}
+
 
 /* index video */
 #indexVid {
   width: 100%;
-  /* height: 10rem; */
   margin-top: 6rem;
+}
+
+@media screen and (max-width: 513px) {
+  .t-medium {
+    font-size: 1.2rem;
+
+  }
+
+  #indexVid {
+
+    margin-top: 6rem;
+  }
 }
 
 /* catalogh */
