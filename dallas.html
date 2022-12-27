@@ -21,11 +21,12 @@
         <div class="container-fluid">
           <div class="navbar-brand">
             <ul class="language">
-              <li class="italian"><a href="#">IT</a></li>
-              <li class="english"><a href="#">EN</a></li>
-              <li><a href="#">RU</a></li>
-              <li><a href="#">ES</a></li>
-              <li><a href="#">DE</a></li>
+              <li><a class="it" href="javascript: void(0)"> IT</a></li>
+              <li><a class="en" href="javascript: void(0)">EN</a></li>
+              <li><a class="ru" href="javascript: void(0)">RU</a></li>
+              <li><a class="es" href="javascript: void(0)">ES</a></li>
+              <li><a class="de" href="javascript: void(0)">DE</a></li>
+
             </ul>
           </div>
           <div class="d-flex socials">
@@ -93,10 +94,10 @@
             <a href="letti" class="underline-hover-effect change-color peach">LETTI</a>
           </li>
           <li id="menu-div">
-            <a href="transformabili" class="underline-hover-effect change-color gray">TRANSFORMABILI</a>
+            <a href="transformabili" class="underline-hover-effect change-color gray">TRASFORMABILI</a>
           </li>
           <li id="menu-div">
-            <a href="potroncine" class="underline-hover-effect change-color blue">POTRONCINI E SEDIE</a>
+            <a href="potroncine" class="underline-hover-effect change-color blue">POLTRONCINE E SEDIE</a>
           </li>
           <li></li>
         </ul>
@@ -243,8 +244,8 @@
             <a href="divani" class="submenu bold">DIVANI</a>
           </li>
           <li><a href="letti" class="submenu bold ">LETTI</a></li>
-          <li><a href="transformabili" class="submenu bold">TRANSFORMABILI</a></li>
-          <li><a href="potroncine" class="submenu bold">POTRONCINI E SEDIE</a></li>
+          <li><a href="transformabili" class="submenu bold">TRASFORMABILI</a></li>
+          <li><a href="potroncine" class="submenu bold">POLTRONCINE E SEDIE</a></li>
           <li><a href="complementi" class="submenu bold">COMPLEMENTI</a></li>
         </ul>
         </li>
@@ -268,18 +269,28 @@
       <div class="column column-right">
         <img loading="lazy" class="firstSmallImg reveal" loading="lazy"
           src="./images/Sito Salotti/TRASFORMABILI/Dallas/DALLAS_PART-SCHIENALE.jpg" alt="Dallas" />
-        <p class="firstsmalltext description it">
-          La testiera si fa più sottile, mantenendo la morbidezza con una
-          forma sagomata leggermente bombata. Un’idea di elegante leggerezza
-          ripresa e sviluppata dai piedini. Il piano è ortopedico in
-          multistrato.
+        <p class="firstsmalltext description italian">
+
         </p>
-        <p class="firstsmalltext description en hidetext ">
+        <!-- <p class="description english">
           The headboard becomes thinner, maintaining its softness with a
           slightly rounded shape. An idea of ​​elegant lightness
           resumed and developed by the feet. The top is orthopedic in
           multilayer.
         </p>
+        <p class="description russian">
+          Изголовье становится тоньше, сохраняя свою мягкость при слегка округлой форме. Идея элегантной легкости
+          возобновлена ​​и развита ногами. Верх ортопедический многослойный.
+        </p>
+        <p class="description spanish">
+          El cabecero se vuelve más delgado, manteniendo su suavidad con una forma ligeramente redondeada. Una idea de
+          elegante ligereza retomada y desarrollada por los pies. La parte superior es ortopédica en multicapa.
+        </p>
+        <p class="description german">
+          Das Kopfteil wird dünner und behält seine Weichheit mit einer leicht abgerundeten Form. Eine Idee von
+          eleganter Leichtigkeit, die von den Füßen wieder aufgenommen und entwickelt wird. Die Oberseite ist
+          orthopädisch in mehrschichtig.
+        </p> -->
       </div>
     </div>
   </section>
@@ -307,7 +318,7 @@
   </section>
   <footer class="container-fluid footer d-flex">
     <div class="footerLogo">
-      <img loading="lazy" src="./images/spagnol.png" alt="Gruppo spagnol" />
+
 
       <div class="Gruppo">
         <img loading="lazy" src="./images/soloto.jpg" alt="" />
@@ -350,7 +361,7 @@
     </div>
   </footer>
   <footer class="container-fluid mobilefooter d-flex">
-    <img loading="lazy" src="./images/spagnol.png" alt="Gruppo spagnol" />
+
 
     <div class="Gruppo">
       <img loading="lazy" src="./images/soloto.jpg" alt="" />
@@ -429,23 +440,23 @@
 
     var texts = document.querySelector(".firstsmalltext")
 
-    // firebase.database().ref('Transformabili/DAfirstImg').on('value', function (snapshot) {
-    //   var myImg1 = snapshot.val().Link;
-    //   firstImg.src = myImg1;
-    // });
-    // firebase.database().ref('Transformabili/DAfirstImg2').on('value', function (snapshot) {
-    //   var myImg1 = snapshot.val().Link;
-    //   secondImg.src = myImg1;
-    // });
-    // firebase.database().ref('Transformabili/DAfirstImg3').on('value', function (snapshot) {
-    //   var myImg1 = snapshot.val().Link;
-    //   thirdImg.src = myImg1;
-    // });
+    firebase.database().ref('Transformabili/DAfirstImg').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      firstImg.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/DAfirstImg2').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      secondImg.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/DAfirstImg3').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      thirdImg.src = myImg1;
+    });
 
-    // firebase.database().ref('Transformabili/DAsmalltext1').on('value', function (snapshot) {
-    //   var myContent = snapshot.val().Content;
-    //   texts.textContent = myContent
-    // });
+    firebase.database().ref('Transformabili/DAsmalltext1').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      texts.textContent = myContent
+    });
 
   </script>
 </body>

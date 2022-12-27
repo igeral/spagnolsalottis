@@ -93,10 +93,10 @@
             <a href="letti" class="underline-hover-effect change-color peach">LETTI</a>
           </li>
           <li id="menu-div">
-            <a href="transformabili" class="underline-hover-effect change-color gray">TRANSFORMABILI</a>
+            <a href="transformabili" class="underline-hover-effect change-color gray">TRASFORMABILI</a>
           </li>
           <li id="menu-div">
-            <a href="potroncine" class="underline-hover-effect change-color blue">POTRONCINI E
+            <a href="potroncine" class="underline-hover-effect change-color blue">POLTRONCINE E
               SEDIE</a>
           </li>
           <li></li>
@@ -244,8 +244,8 @@
             <a href="divani" class="submenu bold">DIVANI</a>
           </li>
           <li><a href="letti" class="submenu bold ">LETTI</a></li>
-          <li><a href="transformabili" class="submenu bold">TRANSFORMABILI</a></li>
-          <li><a href="potroncine" class="submenu bold">POTRONCINI E SEDIE</a></li>
+          <li><a href="transformabili" class="submenu bold">TRASFORMABILI</a></li>
+          <li><a href="potroncine" class="submenu bold">POLTRONCINE E SEDIE</a></li>
           <li><a href="complementi" class="submenu bold">COMPLEMENTI</a></li>
         </ul>
         </li>
@@ -275,7 +275,7 @@
       </div>
     </div>
     <div class="sedie-chairs">
-      <a href="thor" class="chair-link">
+      <!-- <a href="thor" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/Thor.jpg" alt="Thor" class="chair-img secondImg">
         <span class="chair-label firsttext">Thor</span>
       </a>
@@ -310,18 +310,18 @@
       <a href="zippo" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/zippo.jpg" alt="zippo" class="chair-img tenthImg">
         <span class="chair-label ninthtext">Zippo</span>
-      </a>
+      </a> -->
       <a href="ponte" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/Ponte.jpg" alt="Ponte" class="chair-img elevenImg">
         <span class="chair-label tenthtext">Ponte</span>
       </a>
       <a href="tekka" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/Teka.jpg" alt="tekka" class="chair-img twelveImg">
-        <span class="chair-label eleventext">Tekka</span>
+        <span class="chair-label eleventext">Teka Rettangolare</span>
       </a>
       <a href="tekkarotondo" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/Teka Rotondo.jpg" alt="tekkarotondo" class="chair-img thirteenImg">
-        <span class="chair-label twelvetext"> Tekka Rotondo</span>
+        <span class="chair-label twelvetext"> Teka Rotondo</span>
       </a>
       <a href="zipporotondo" class="chair-link">
         <img src="./images/Sito Salotti/COMPLEMENTI/ZIppoRotondo.jpg" alt="zipporotondo" class="chair-img fourteenImg">
@@ -349,7 +349,7 @@
 
   <footer class="container-fluid footer d-flex">
     <div class="footerLogo">
-      <img loading="lazy" src="./images/spagnol.png" alt="Gruppo spagnol" />
+
 
       <div class="Gruppo">
         <img loading="lazy" src="./images/soloto.jpg" alt="" />
@@ -392,7 +392,7 @@
     </div>
   </footer>
   <footer class="container-fluid mobilefooter d-flex">
-    <img loading="lazy" src="./images/spagnol.png" alt="Gruppo spagnol" />
+
 
     <div class="Gruppo">
       <img loading="lazy" src="./images/soloto.jpg" alt="" />
@@ -468,15 +468,15 @@
 
 
 
-    var firstImg = document.querySelector(".firstImg");
-    var secondImg = document.querySelector(".secondImg");
-    var thirdImg = document.querySelector(".thirdImg");
-    var fourthImg = document.querySelector(".fourthImg");
-    var fifthImg = document.querySelector(".fifthImg");
-    var sixthImg = document.querySelector(".sixthImg");
-    var seventhImg = document.querySelector(".seventhImg");
-    var eightImg = document.querySelector(".eightImg");
-    var ninthImg = document.querySelector(".ninthImg");
+    // var firstImg = document.querySelector(".firstImg");
+    // var secondImg = document.querySelector(".secondImg");
+    // var thirdImg = document.querySelector(".thirdImg");
+    // var fourthImg = document.querySelector(".fourthImg");
+    // var fifthImg = document.querySelector(".fifthImg");
+    // var sixthImg = document.querySelector(".sixthImg");
+    // var seventhImg = document.querySelector(".seventhImg");
+    // var eightImg = document.querySelector(".eightImg");
+    // var ninthImg = document.querySelector(".ninthImg");
     var tenthImg = document.querySelector(".tenthImg");
     var elevenImg = document.querySelector(".elevenImg");
     var twelveImg = document.querySelector(".twelveImg");
@@ -494,15 +494,15 @@
     var img5 = document.querySelector(".img5");
 
 
-    var firsttext = document.querySelector(".firsttext");
-    var secondtext = document.querySelector(".secondtext");
-    var thirdtext = document.querySelector(".thirdtext");
-    var fourthtext = document.querySelector(".fourthtext");
-    var fifthtext = document.querySelector(".fifthtext");
-    var sixthtext = document.querySelector(".sixthtext");
-    var seventhtext = document.querySelector(".seventhtext");
-    var eighttext = document.querySelector(".eighttext");
-    var ninthtext = document.querySelector(".ninthtext");
+    // var firsttext = document.querySelector(".firsttext");
+    // var secondtext = document.querySelector(".secondtext");
+    // var thirdtext = document.querySelector(".thirdtext");
+    // var fourthtext = document.querySelector(".fourthtext");
+    // var fifthtext = document.querySelector(".fifthtext");
+    // var sixthtext = document.querySelector(".sixthtext");
+    // var seventhtext = document.querySelector(".seventhtext");
+    // var eighttext = document.querySelector(".eighttext");
+    // var ninthtext = document.querySelector(".ninthtext");
     var tenthtext = document.querySelector(".tenthtext");
     var eleventext = document.querySelector(".eleventext");
     var twelvetext = document.querySelector(".twelvetext");
@@ -533,48 +533,48 @@
       img5.src = myImg1;
     });
 
-    firebase.database().ref('Complementi/ComplementiImg').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      firstImg.src = myImg1;
-    });
-    firebase.database().ref('Complementi/ComplementiImg2').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      secondImg.src = myImg1;
-    });
-    firebase.database().ref('Complementi/ComplementiImg3').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      thirdImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   firstImg.src = myImg1;
+    // });
+    // firebase.database().ref('Complementi/ComplementiImg2').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   secondImg.src = myImg1;
+    // });
+    // firebase.database().ref('Complementi/ComplementiImg3').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   thirdImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg4').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      fourthImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg4').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   fourthImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg5').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      fifthImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg5').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   fifthImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg6').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      sixthImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg6').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   sixthImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg7').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      seventhImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg7').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   seventhImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg8').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      eightImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg8').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   eightImg.src = myImg1;
+    // });
 
-    firebase.database().ref('Complementi/ComplementiImg9').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      ninthImg.src = myImg1;
-    });
+    // firebase.database().ref('Complementi/ComplementiImg9').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   ninthImg.src = myImg1;
+    // });
 
     firebase.database().ref('Complementi/ComplementiImg10').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;
@@ -618,48 +618,48 @@
       eighteenImg.src = myImg1;
     });
 
-    firebase.database().ref('Complementi/Complementitext').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      firsttext.textContent = myContent
-    });
-    firebase.database().ref('Complementi/Complementitext2').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      secondtext.textContent = myContent
-    });
-    firebase.database().ref('Complementi/Complementitext3').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      thirdtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   firsttext.textContent = myContent
+    // });
+    // firebase.database().ref('Complementi/Complementitext2').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   secondtext.textContent = myContent
+    // });
+    // firebase.database().ref('Complementi/Complementitext3').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   thirdtext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext4').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      fourthtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext4').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   fourthtext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext5').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      fifthtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext5').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   fifthtext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext6').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      sixthtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext6').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   sixthtext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext7').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      seventhtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext7').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   seventhtext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext8').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      eighttext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext8').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   eighttext.textContent = myContent
+    // });
 
-    firebase.database().ref('Complementi/Complementitext9').on('value', function (snapshot) {
-      var myContent = snapshot.val().Content;
-      ninthtext.textContent = myContent
-    });
+    // firebase.database().ref('Complementi/Complementitext9').on('value', function (snapshot) {
+    //   var myContent = snapshot.val().Content;
+    //   ninthtext.textContent = myContent
+    // });
 
     firebase.database().ref('Complementi/Complementitext10').on('value', function (snapshot) {
       var myContent = snapshot.val().Content;

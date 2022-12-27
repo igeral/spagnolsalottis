@@ -104,31 +104,67 @@ window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", revealleft);
 window.addEventListener("scroll", revealright);
 
-
-const italian = document.querySelector('.it')
-const english = document.querySelector('.en')
-const engButton = document.querySelector('.english')
-const itButton = document.querySelector('.italian')
 localStorage.setItem('language', 'it')
+const italian = document.querySelector('.italian')
+const english = document.querySelector('.english')
+const russian = document.querySelector('.russian')
+const spanish = document.querySelector('.spanish')
+const german = document.querySelector('.german')
 
-engButton.addEventListener('click', () => {
-  localStorage.setItem('language', 'en');
+const language = document.querySelector('.language')
 
+language.addEventListener('click', function (e) {
+  if (e.target.classList.contains('it')) {
+    localStorage.setItem('language', 'it');
+  } else if (e.target.classList.contains('en')) {
+    localStorage.setItem('language', 'en');
+  } else if (e.target.classList.contains('ru')) {
+    localStorage.setItem('language', 'ru');
+  } else if (e.target.classList.contains('es')) {
+    localStorage.setItem('language', 'es');
+  } else if (e.target.classList.contains('de')) {
+    localStorage.setItem('language', 'de');
+  }
+
+  changeLaguage();
 })
-itButton.addEventListener('click', () => {
-  localStorage.setItem('language', 'it');
 
-})
+function changeLaguage() {
 
-
-const currentLanguage = localStorage.getItem('language')
-
-if (currentLanguage === 'it') {
-  english.classList.add('hidetext')
-  italian.classList.remove('hidetext')
+  if (localStorage.getItem('language') === 'en') {
+    english.classList.remove('hidetext')
+    italian.classList.add('hidetext')
+    russian.classList.add('hidetext');
+    spanish.classList.add('hidetext');
+    german.classList.add('hidetext');
+  } else if (localStorage.getItem('language') === 'it') {
+    italian.classList.remove('hidetext')
+    english.classList.add('hidetext')
+    russian.classList.add('hidetext');
+    spanish.classList.add('hidetext');
+    german.classList.add('hidetext');
+  } else if (localStorage.getItem('language') === 'ru') {
+    italian.classList.add('hidetext')
+    english.classList.add('hidetext')
+    russian.classList.remove('hidetext');
+    spanish.classList.add('hidetext');
+    german.classList.add('hidetext');
+  } else if (localStorage.getItem('language') === 'es') {
+    italian.classList.add('hidetext')
+    english.classList.add('hidetext')
+    russian.classList.add('hidetext');
+    spanish.classList.remove('hidetext');
+    german.classList.add('hidetext');
+  } else if (localStorage.getItem('language') === 'de') {
+    italian.classList.add('hidetext')
+    english.classList.add('hidetext')
+    russian.classList.add = ('hidetext');
+    spanish.classList.add('hidetext');
+    german.classList.remove('hidetext');
+  }
 }
 
-if (currentLanguage === 'en') {
-  english.classList.remove('hidetext')
-  italian.classList.add('hidetext')
-}
+changeLaguage();
+
+
+
