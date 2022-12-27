@@ -1467,3 +1467,15 @@ input[type="checkbox"]:focus {
 .hidetext {
   display: none;
 }
+
+@media screen and (min-width: 760px) {
+
+  .w200 {
+    width: 200px;
+  }
+}
+
+
+.fr2.r6 {
+  right: 6%;
+}

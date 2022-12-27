@@ -277,8 +277,8 @@
                 </div>
             </div>
         </div>
-        <div class="fr2">
-            <p class="firstsmalltext"></p>
+        <div class="fr2 r6">
+            <p class="firstsmalltext w200"></p>
         </div>
     </section>
     <div class="extra-image">
@@ -448,10 +448,10 @@
             thirdImg.src = myImg1;
         });
 
-        // firebase.database().ref('Potroncini/Emmasmalltext1').on('value', function (snapshot) {
-        //     var myContent = snapshot.val().Content;
-        //     texts.textContent = myContent
-        // });
+        firebase.database().ref('Potroncini/Emmasmalltext1').on('value', function (snapshot) {
+            var myContent = snapshot.val().Content;
+            texts.textContent = myContent
+        });
 
     </script>
 </body>
