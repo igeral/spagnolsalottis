@@ -337,15 +337,15 @@ a:hover {
   position: relative;
 }
 
-/* .boxImg {
+.boxImg {
   width: 95%;
-} */
+}
 
 .boxImg {
   position: relative;
 }
 
-@media screen and (max-width: 513px) {
+/* @media screen and (max-width: 513px) {
   .boxImg {
     width: 150px;
   }
@@ -367,7 +367,7 @@ a:hover {
   .boxImg {
     width: 1080px;
   }
-}
+} */
 
 .imgBox .beds .boxImg2 {
   position: absolute;
