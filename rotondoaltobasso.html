@@ -278,7 +278,7 @@
             </div>
         </div>
         <div class="fr2">
-            <h1 class="firsttext" style="font-size: 30px;">ROTONDO Alto <br>
+            <h1 class="firsttext" style="font-size: 30px; font-weight: 600">ROTONDO Alto <br>
                 ROTONDO Basso</h1>
             <p class="secondtext">ø 45 _H. 64 cm <br>
                 ø 45 _H. 45 cm</p>
@@ -480,11 +480,11 @@
 
         firebase.database().ref('Complementi/ROTONDOALTOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/ROTONDOALTOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>

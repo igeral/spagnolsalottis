@@ -279,9 +279,9 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">ZIPPO</h1>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600">ZIPPO</h1>
                 <p class="secondtext">L. 140/160/180/210 _ P. 90 _ H. 72 cm</p>
-                <h1 class="thirdtext" style="font-size: 30px;">ZIPPO Rotondo</h1>
+                <h1 class="thirdtext" style="font-size: 30px; font-weight: 600">ZIPPO Rotondo</h1>
                 <p class="fourthtext">Rotondo ø 60 _ H.45 cm <br>
                     Rotondo ø 90 _ H.33 cm</p>
             </div>
@@ -486,19 +486,19 @@
 
         firebase.database().ref('Complementi/ZIPPOROTONDOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/ZIPPOROTONDOh2').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/ZIPPOROTONDOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            thirdtext.textContent = myContent
+            thirdtext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/ZIPPOROTONDOp2').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            fourthtext.textContent = myContent
+            fourthtext.innerHTML = myContent
         });
 
     </script>

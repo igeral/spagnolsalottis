@@ -279,7 +279,7 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">HAPPY ISLAND Alto <br>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600">HAPPY ISLAND Alto <br>
                     HAPPY ISLAND Basso</h1>
                 <p class="secondtext"> ø 50 _ H. 30 cm <br>
                     ø 50 _ H. 50 cm</p>
@@ -482,11 +482,11 @@
 
         firebase.database().ref('Complementi/HAPPYISLANDh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/HAPPYISLANDp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>

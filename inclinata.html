@@ -277,7 +277,7 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">GAMBA INCLINATA</h1>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600">GAMBA INCLINATA</h1>
                 <p class="secondtext">L.42 _ P. 42 _ H. 46 cm</p>
             </div>
         </div>
@@ -478,11 +478,11 @@
 
         firebase.database().ref('Complementi/INCLINATAh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/INCLINATAp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>

@@ -279,7 +279,7 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">TEKA rotondo alto <br>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600">TEKA rotondo alto <br>
                     TEKA rotondo basso</h1>
                 <p class="secondtext">ø 50 _ H. 53 cm <br>
                     ø 70 _ H. 32 cm</p>
@@ -482,11 +482,11 @@
 
         firebase.database().ref('Complementi/TEKAROTONDOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/TEKAROTONDOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>

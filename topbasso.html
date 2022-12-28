@@ -277,7 +277,7 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">TOP</h1>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600;">TOP</h1>
                 <p class="secondtext">L.120 _ P. 60 _ H. 43 cm</p>
             </div>
         </div>
@@ -478,11 +478,11 @@
 
         firebase.database().ref('Complementi/TOPBASSOh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/TOPBASSOp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>

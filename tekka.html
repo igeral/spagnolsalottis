@@ -277,7 +277,7 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">TEKA rettangolare alto <br>
+                <h1 class="firsttext" style="font-size: 30px; font-weight: 600">TEKA rettangolare alto <br>
                     TEKA rettangolare basso</h1>
                 <p class="secondtext">L. 50 _ P. 40 _ H. 60 cm <br>
                     L. 70 _ P. 40 _ H. 40 cm</p>
@@ -480,11 +480,11 @@
 
         firebase.database().ref('Complementi/TEKKAh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.textContent = myContent
+            firsttext.innerHTML = myContent
         });
         firebase.database().ref('Complementi/TEKKAp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            secondtext.textContent = myContent
+            secondtext.innerHTML = myContent
         });
 
     </script>
