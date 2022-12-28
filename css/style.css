@@ -337,12 +337,36 @@ a:hover {
   position: relative;
 }
 
-.boxImg {
+/* .boxImg {
   width: 95%;
-}
+} */
 
 .boxImg {
   position: relative;
+}
+
+@media screen and (max-width: 513px) {
+  .boxImg {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .boxImg {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 2100px) {
+  .boxImg {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .boxImg {
+    width: 1080px;
+  }
 }
 
 .imgBox .beds .boxImg2 {
