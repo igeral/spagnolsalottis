@@ -840,7 +840,7 @@ input[type="checkbox"]:focus {
   /* margin-top: 6rem; */
 }
 
-@media screen and (max-width: 513px) {
+@media screen and (max-width: 1024px) {
   .t-medium {
     font-size: 1.2rem;
 
