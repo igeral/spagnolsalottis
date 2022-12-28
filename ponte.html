@@ -277,7 +277,8 @@
         </div>
         <div class="fr2">
             <div>
-                <h1 class="firsttext" style="font-size: 30px;">Ponte Piccolo <br> Ponte Grande</h1>
+                <h1 class="firsttext" style="font-size: 30px;">Ponte Piccolo</h1>
+                <h1 class="firsttextbold" style="font-size: 30px; font-weight: 600;">Ponte Grande</h1>
                 <p class="secondtext">L. 42 _ P. 42 _ H. 40 cm <br>
                     L.120 _ P. 60 _ H. 40 cm</p>
             </div>
@@ -455,6 +456,7 @@
 
 
         var firsttext = document.querySelector(".firsttext")
+        var firsttextbold = document.querySelector(".firsttextbold")
         var secondtext = document.querySelector(".secondtext")
 
 
@@ -479,7 +481,11 @@
 
         firebase.database().ref('Complementi/PONTEh1').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
-            firsttext.innerHTML = myContent
+            firsttext.textContent = myContent
+        });
+        firebase.database().ref('Complementi/PONTEh1bold').on('value', function (snapshot) {
+            var myContent = snapshot.val().Content;
+            firsttextbold.textContent = myContent
         });
         firebase.database().ref('Complementi/PONTEp').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
