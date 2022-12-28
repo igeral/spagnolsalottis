@@ -456,6 +456,10 @@ a:hover {
   gap: 50px;
 }
 
+.Sociallogo {
+  margin-top: -2%;
+}
+
 footer>.Sociallogo>.socialsf>.icon>.fb,
 footer>.socialsf>.icon>.fb {
   background-color: #fff;
