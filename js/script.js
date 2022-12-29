@@ -44,19 +44,20 @@ document.querySelector(".backone").addEventListener("click", (e) => {
   document.querySelector(".items").style.transitionDuration = "0.5s";
 });
 
-var scrollTriggerAnimation = 60;
-var minHeight = 1024
+var scrollTriggerAnimation = 20;
+var minHeight = 1000
 
-// window.onscroll = function () {
-//   if (!text) return;
-//   if (window.scrollY >= scrollTriggerAnimation && screen.width >= minHeight) {
-//     text.classList.add('scroll')
-//     console.log('scroll')
-//   } else {
-//     text.classList.remove('scroll')
-//   }
+window.onscroll = function () {
+  if (!text) return;
+  console.log(window.scrollY)
+  if (window.scrollY >= scrollTriggerAnimation && window, scrollY >= minHeight) {
+    text.classList.add('scroll')
+    console.log('scroll')
+  } else {
+    text.classList.remove('scroll')
+  }
 
-// }
+}
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");

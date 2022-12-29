@@ -1330,9 +1330,9 @@ input[type="checkbox"]:focus {
 }
 
 .fr2 {
-  position: relative;
+  position: fixed;
   /* right: 25%; */
-  left: 50%;
+  left: 55%;
   top: 45%;
   text-align: left;
   font-size: 21px;
@@ -1340,18 +1340,14 @@ input[type="checkbox"]:focus {
 }
 
 .scroll {
-  /* top: auto; */
-  position: absolute;
+  display: none;
 }
 
-
-
-/* .fr2>div {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15%;
-} */
+@media screen and (min-with: 736px) and (max-width: 830px) {
+  .fr2 {
+    top: 37%;
+  }
+}
 
 .extra-image.image {
   display: flex;
@@ -1390,12 +1386,12 @@ input[type="checkbox"]:focus {
 }
 
 @media screen and (max-width: 1023px) {
-  .fr2 {
+  /* .fr2 {
     position: static;
     display: flex;
     text-align: center;
     justify-content: center;
-  }
+  } */
 
   .firstdiv.d-flex,
   .seconddiv.d-flex {
