@@ -1330,7 +1330,7 @@ input[type="checkbox"]:focus {
 }
 
 .fr2 {
-  position: fixed;
+  position: relative;
   right: 25%;
   top: 45%;
   text-align: left;
