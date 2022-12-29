@@ -375,6 +375,37 @@
           <h4></h4>
         </div>
       </a>
+      <a href="leo" class="imgBox align-items-center">
+        <div class="beds d-flex">
+          <img src="./images/Sito Salotti/POLTRONCINE/Leo/LEO-POUF_APERTO-2.jpg" alt="Leo" class="boxImg tenthImg">
+        </div>
+        <div class="label">
+          <h3 class="tenthtext">Leo</h3>
+        </div>
+      </a>
+    </div>
+    <div class="d-flex frontbed">
+      <a href="magicpoltrona" class="imgBox align-items-center">
+        <div class="beds d-flex">
+          <img src="./images/Sito Salotti/POLTRONCINE/Magic Poltrona/MAGIC_FRONTALE.jpg" alt="Magic poltrona"
+            class="boxImg elevebImg">
+        </div>
+        <div class="label">
+
+          <h3 class="eleventext">Magic Poltrona</h3>
+        </div>
+      </a>
+      <a href="magicpouf" class="imgBox align-items-center">
+        <div class="beds d-flex">
+          <img src="./images/Sito Salotti/POLTRONCINE/Magic Pouf/MAGIC-POUF_FRONTALE.jpg" alt="Magic Pouf"
+            class="boxImg twelveImg">
+        </div>
+        <div class="label">
+          <h3 class="twelvetext">Magic Pouf</h3>
+
+        </div>
+      </a>
+    </div>
     </div>
   </section>
 
@@ -508,6 +539,10 @@
     var seventhImg = document.querySelector(".seventhImg");
     var eightImg = document.querySelector(".eightImg");
     var ninthImg = document.querySelector(".ninthImg");
+    var tenthImg = document.querySelector(".tenthImg");
+    var elevenImg = document.querySelector(".elevenImg");
+    var twelveImg = document.querySelector(".twelveImg");
+
     var img1 = document.querySelector(".img1");
     var img2 = document.querySelector(".img2");
     var img3 = document.querySelector(".img3");
@@ -525,6 +560,10 @@
     var seventhtext = document.querySelector(".seventhtext");
     var eighttext = document.querySelector(".eighttext");
     var ninthtext = document.querySelector(".ninthtext");
+    var tenthtext = document.querySelector(".tenthtext");
+    var eleventext = document.querySelector(".eleventext");
+    var twelvetext = document.querySelector(".twelvetext");
+
 
     firebase.database().ref('Transformabili/TRImgslide').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;
@@ -592,6 +631,18 @@
       var myImg1 = snapshot.val().Link;
       ninthImg.src = myImg1;
     });
+    firebase.database().ref('Transformabili/TRImg10').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      tenthImg.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImg11').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      elevenImg.src = myImg1;
+    });
+    firebase.database().ref('Transformabili/TRImg12').on('value', function (snapshot) {
+      var myImg1 = snapshot.val().Link;
+      twelveImg.src = myImg1;
+    });
 
 
 
@@ -636,6 +687,18 @@
     firebase.database().ref('Transformabili/TRtext9').on('value', function (snapshot) {
       var myContent = snapshot.val().Content;
       ninthtext.textContent = myContent
+    });
+    firebase.database().ref('Transformabili/TRtext10').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      tenthtext.textContent = myContent
+    });
+    firebase.database().ref('Transformabili/TRtext11').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      eleventext.textContent = myContent
+    });
+    firebase.database().ref('Transformabili/TRtext12').on('value', function (snapshot) {
+      var myContent = snapshot.val().Content;
+      twelvetext.textContent = myContent
     });
 
 

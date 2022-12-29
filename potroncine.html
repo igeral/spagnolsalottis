@@ -294,21 +294,7 @@
                     class="chair-img thirdImg">
                 <span class="chair-label thirdtext">Emma</span>
             </a>
-            <a href="leo" class="chair-link">
-                <img src="./images/Sito Salotti/POLTRONCINE/Leo/LEO-POUF_APERTO-2.jpg" alt="Leo"
-                    class="chair-img fourthImg">
-                <span class="chair-label fourthtext">Leo</span>
-            </a>
-            <a href="magicpoltrona" class="chair-link">
-                <img src="./images/Sito Salotti/POLTRONCINE/Magic Poltrona/MAGIC_FRONTALE.jpg" alt="Magic poltrona"
-                    class="chair-img fifthImg">
-                <span class="chair-label fifthtext">Magic Poltrona</span>
-            </a>
-            <a href="magicpouf" class="chair-link">
-                <img src="./images/Sito Salotti/POLTRONCINE/Magic Pouf/MAGIC-POUF_FRONTALE.jpg" alt="Magic Pouf"
-                    class="chair-img sixthImg">
-                <span class="chair-label sixthtext">Magic Pouf</span>
-            </a>
+
             <a href="margot" class="chair-link">
                 <img src="./images/Sito Salotti/POLTRONCINE/Margot/MARGOT_FRONTALE.jpg" alt="Margot"
                     class="chair-img seventhImg">
@@ -470,9 +456,9 @@
         var firstImg = document.querySelector(".firstImg");
         var secondImg = document.querySelector(".secondImg");
         var thirdImg = document.querySelector(".thirdImg");
-        var fourthImg = document.querySelector(".fourthImg");
-        var fifthImg = document.querySelector(".fifthImg");
-        var sixthImg = document.querySelector(".sixthImg");
+        // var fourthImg = document.querySelector(".fourthImg");
+        // var fifthImg = document.querySelector(".fifthImg");
+        // var sixthImg = document.querySelector(".sixthImg");
         var seventhImg = document.querySelector(".seventhImg");
         var eightImg = document.querySelector(".eightImg");
         var ninthImg = document.querySelector(".ninthImg");
@@ -491,9 +477,9 @@
         var firsttext = document.querySelector(".firsttext");
         var secondtext = document.querySelector(".secondtext");
         var thirdtext = document.querySelector(".thirdtext");
-        var fourthtext = document.querySelector(".fourthtext");
-        var fifthtext = document.querySelector(".fifthtext");
-        var sixthtext = document.querySelector(".sixthtext");
+        // var fourthtext = document.querySelector(".fourthtext");
+        // var fifthtext = document.querySelector(".fifthtext");
+        // var sixthtext = document.querySelector(".sixthtext");
         var seventhtext = document.querySelector(".seventhtext");
         var eighttext = document.querySelector(".eighttext");
         var ninthtext = document.querySelector(".ninthtext");
@@ -536,20 +522,20 @@
             thirdImg.src = myImg1;
         });
 
-        firebase.database().ref('Potroncini/PotronciniImg4').on('value', function (snapshot) {
-            var myImg1 = snapshot.val().Link;
-            fourthImg.src = myImg1;
-        });
+        // firebase.database().ref('Potroncini/PotronciniImg4').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     fourthImg.src = myImg1;
+        // });
 
-        firebase.database().ref('Potroncini/PotronciniImg5').on('value', function (snapshot) {
-            var myImg1 = snapshot.val().Link;
-            fifthImg.src = myImg1;
-        });
+        // firebase.database().ref('Potroncini/PotronciniImg5').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     fifthImg.src = myImg1;
+        // });
 
-        firebase.database().ref('Potroncini/PotronciniImg6').on('value', function (snapshot) {
-            var myImg1 = snapshot.val().Link;
-            sixthImg.src = myImg1;
-        });
+        // firebase.database().ref('Potroncini/PotronciniImg6').on('value', function (snapshot) {
+        //     var myImg1 = snapshot.val().Link;
+        //     sixthImg.src = myImg1;
+        // });
 
         firebase.database().ref('Potroncini/PotronciniImg7').on('value', function (snapshot) {
             var myImg1 = snapshot.val().Link;
@@ -601,20 +587,20 @@
             thirdtext.textContent = myContent
         });
 
-        firebase.database().ref('Potroncini/Potroncinitext4').on('value', function (snapshot) {
-            var myContent = snapshot.val().Content;
-            fourthtext.textContent = myContent
-        });
+        // firebase.database().ref('Potroncini/Potroncinitext4').on('value', function (snapshot) {
+        //     var myContent = snapshot.val().Content;
+        //     fourthtext.textContent = myContent
+        // });
 
-        firebase.database().ref('Potroncini/Potroncinitext5').on('value', function (snapshot) {
-            var myContent = snapshot.val().Content;
-            fifthtext.textContent = myContent
-        });
+        // firebase.database().ref('Potroncini/Potroncinitext5').on('value', function (snapshot) {
+        //     var myContent = snapshot.val().Content;
+        //     fifthtext.textContent = myContent
+        // });
 
-        firebase.database().ref('Potroncini/Potroncinitext6').on('value', function (snapshot) {
-            var myContent = snapshot.val().Content;
-            sixthtext.textContent = myContent
-        });
+        // firebase.database().ref('Potroncini/Potroncinitext6').on('value', function (snapshot) {
+        //     var myContent = snapshot.val().Content;
+        //     sixthtext.textContent = myContent
+        // });
 
         firebase.database().ref('Potroncini/Potroncinitext7').on('value', function (snapshot) {
             var myContent = snapshot.val().Content;
