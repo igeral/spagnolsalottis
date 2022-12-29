@@ -47,16 +47,16 @@ document.querySelector(".backone").addEventListener("click", (e) => {
 var scrollTriggerAnimation = 60;
 var minHeight = 1024
 
-window.onscroll = function () {
-  if (!text) return;
-  if (window.scrollY >= scrollTriggerAnimation && screen.width >= minHeight) {
-    text.classList.add('scroll')
-    console.log('scroll')
-  } else {
-    text.classList.remove('scroll')
-  }
+// window.onscroll = function () {
+//   if (!text) return;
+//   if (window.scrollY >= scrollTriggerAnimation && screen.width >= minHeight) {
+//     text.classList.add('scroll')
+//     console.log('scroll')
+//   } else {
+//     text.classList.remove('scroll')
+//   }
 
-}
+// }
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");

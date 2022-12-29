@@ -1331,9 +1331,12 @@ input[type="checkbox"]:focus {
 
 .fr2 {
   position: relative;
-  right: 25%;
+  /* right: 25%; */
+  left: 50%;
   top: 45%;
   text-align: left;
+  font-size: 21px;
+
 }
 
 .scroll {
@@ -1341,9 +1344,7 @@ input[type="checkbox"]:focus {
   position: absolute;
 }
 
-.fr2>div>p {
-  font-size: 21px;
-}
+
 
 /* .fr2>div {
   display: grid;
@@ -1499,11 +1500,11 @@ input[type="checkbox"]:focus {
 @media screen and (min-width: 760px) {
 
   .w200 {
-    width: 200px;
+    width: 300px;
   }
 }
 
 
 .fr2.r6 {
-  right: 25%;
+  /* right: 25%; */
 }
