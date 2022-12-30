@@ -542,9 +542,9 @@
     var elevenImg = document.querySelector(".elevenImg");
     var twelveImg = document.querySelector(".twelveImg");
 
-    var img1 = document.querySelector(".img1");
-    var img2 = document.querySelector(".img2");
-    var img3 = document.querySelector(".img3");
+    // var img1 = document.querySelector(".img1");
+    // var img2 = document.querySelector(".img2");
+    // var img3 = document.querySelector(".img3");
     var img4 = document.querySelector(".img4");
     var img5 = document.querySelector(".img5");
     var img6 = document.querySelector(".img6");
@@ -564,18 +564,18 @@
     var twelvetext = document.querySelector(".twelvetext");
 
 
-    firebase.database().ref('Transformabili/TRImgslide').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      img1.src = myImg1;
-    });
-    firebase.database().ref('Transformabili/TRImgslide2').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      img2.src = myImg1;
-    });
-    firebase.database().ref('Transformabili/TRImgslide3').on('value', function (snapshot) {
-      var myImg1 = snapshot.val().Link;
-      img3.src = myImg1;
-    });
+    // firebase.database().ref('Transformabili/TRImgslide').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   img1.src = myImg1;
+    // });
+    // firebase.database().ref('Transformabili/TRImgslide2').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   img2.src = myImg1;
+    // });
+    // firebase.database().ref('Transformabili/TRImgslide3').on('value', function (snapshot) {
+    //   var myImg1 = snapshot.val().Link;
+    //   img3.src = myImg1;
+    // });
     firebase.database().ref('Transformabili/TRImgslide4').on('value', function (snapshot) {
       var myImg1 = snapshot.val().Link;
       img4.src = myImg1;
