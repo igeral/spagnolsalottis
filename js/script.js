@@ -21,18 +21,18 @@ function margin() {
   console.log(navblack.offsetHeight)
 
   if (screen.width <= 767) {
-    carousel.style.marginTop = navwhitemobile.offsetHeight + navblackmobile.offsetHeight;
+    carousel.style.marginTop = `${navwhitemobile.offsetHeight + navblackmobile.offsetHeight}px`;
 
   } else if (screen.width > 767 && screen.width < 1024) {
-    carousel.style.marginTop = navwhitetablet.offsetHeight + navblacktablet.offsetHeight;
+    carousel.style.marginTop = `${navwhitetablet.offsetHeight + navblacktablet.offsetHeight}px`;
 
   }
-  else if (screen.width > 1024) {
-    carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+  if (screen.width >= 1024) {
+    carousel.style.marginTop = `${navwhite.offsetHeight + navblack.offsetHeight}px`;
   }
 
 }
-margin()
+margin();
 
 openMenu.addEventListener("click", () => {
   overlay.classList.toggle("showmenu");
@@ -157,7 +157,7 @@ language.addEventListener('click', function (e) {
 })
 
 function changeLaguage() {
-
+  if (!english || !italian || !russian || !spanish || !german) return;
   if (localStorage.getItem('language') === 'en') {
     english.classList.remove('hidetext')
     italian.classList.add('hidetext')
