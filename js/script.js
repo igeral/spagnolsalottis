@@ -9,11 +9,17 @@ const cancel = document.querySelector(".fa-times");
 const text = document.querySelector(".fr2")
 var navwhite = document.querySelector('.bg-black')
 var navblack = document.querySelector('.bg-white')
-const carousel = document.getElementById('carouselExampleControls')
-console.log(navwhite.offsetHeight)
-console.log(navblack.offsetHeight)
-const margin =
-  carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+
+function margin() {
+  const carousel = document.getElementById('carouselExampleControls')
+  if (!carousel) return;
+  console.log(navwhite.offsetHeight)
+  console.log(navblack.offsetHeight)
+  const margin =
+    carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+
+}
+margin()
 
 openMenu.addEventListener("click", () => {
   overlay.classList.toggle("showmenu");
