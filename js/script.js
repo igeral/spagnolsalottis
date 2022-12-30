@@ -27,7 +27,7 @@ function margin() {
     carousel.style.marginTop = navwhitetablet.offsetHeight + navblacktablet.offsetHeight;
 
   }
-  else {
+  else if (screen.width > 1024) {
     carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
   }
 
