@@ -10,22 +10,26 @@ const text = document.querySelector(".fr2")
 var navwhite = document.querySelector('.bg-black')
 var navblack = document.querySelector('.bg-white')
 var navwhitemobile = document.querySelector('.bg-black.mobile')
-var navblackmobilemobile = document.querySelector('.bg-white.mobile')
-
+var navblackmobile = document.querySelector('.bg-white.mobile')
+var navwhitetablet = document.querySelector('.bg-black.tablet')
+var navblacktablet = document.querySelector('.bg-white.tablet')
 
 function margin() {
   const carousel = document.getElementById('carouselExampleControls')
   if (!carousel) return;
   console.log(navwhite.offsetHeight)
   console.log(navblack.offsetHeight)
-  carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
 
-  if (screen.width <= 513) {
+  if (screen.width <= 767) {
     carousel.style.marginTop = navwhitemobile.offsetHeight + navblackmobile.offsetHeight;
 
+  } else if (screen.width > 767 && screen.width < 1024) {
+    carousel.style.marginTop = navwhitetablet.offsetHeight + navblacktablet.offsetHeight;
+
   }
-
-
+  else {
+    carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+  }
 
 }
 margin()
