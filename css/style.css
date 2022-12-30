@@ -1465,10 +1465,6 @@ input[type="checkbox"]:focus {
 
 /* header slider */
 @media screen and (max-width: 1023px) {
-  .h600 {
-    height: 150px;
-  }
-
   .t7 {
     margin-top: 7rem;
   }
