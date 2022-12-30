@@ -9,14 +9,23 @@ const cancel = document.querySelector(".fa-times");
 const text = document.querySelector(".fr2")
 var navwhite = document.querySelector('.bg-black')
 var navblack = document.querySelector('.bg-white')
+var navwhitemobile = document.querySelector('.bg-black.mobile')
+var navblackmobilemobile = document.querySelector('.bg-white.mobile')
+
 
 function margin() {
   const carousel = document.getElementById('carouselExampleControls')
   if (!carousel) return;
   console.log(navwhite.offsetHeight)
   console.log(navblack.offsetHeight)
-  const margin =
-    carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+  carousel.style.marginTop = navwhite.offsetHeight + navblack.offsetHeight;
+
+  if (screen.width <= 513) {
+    carousel.style.marginTop = navwhitemobile.offsetHeight + navblackmobile.offsetHeight;
+
+  }
+
+
 
 }
 margin()
