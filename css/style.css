@@ -1475,12 +1475,6 @@ input[type="checkbox"]:focus {
 }
 
 
-@media screen and (min-width: 1024px) {
-  .h600 {
-    height: 700px;
-  }
-}
-
 /* innerpages carousel for mobile */
 @media screen and (min-width: 513px) {
   .mobile {
