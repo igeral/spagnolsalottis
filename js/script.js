@@ -211,6 +211,6 @@ window.addEventListener("load", function () {
 
   // Hide the loader after 2 seconds
   setTimeout(function () {
-    document.querySelector(".actual-body").style.display = "block";
+    document.querySelector(".actual-body").style.opacity = "1";
   }, 2000);
 });
