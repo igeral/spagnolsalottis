@@ -1495,18 +1495,18 @@ input[type="checkbox"]:focus {
   right: 25%;
 } */
 
-.loader {
+/* .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 10px solid #3498db;
   width: 70px;
   height: 70px;
-  animation: spin 2s linear infinite;
-  /* position: fixed; */
-  /* top: 50%; */
-  /* left: 45%; */
-  margin: 50% auto 0 auto;
-}
+  animation: spin 2s linear infinite; */
+/* position: fixed; */
+/* top: 50%; */
+/* left: 45%; */
+/* margin: 50% auto 0 auto;
+} */
 
 .actual-body {
   opacity: 0;
@@ -1519,5 +1519,60 @@ input[type="checkbox"]:focus {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/*  */
+.gooey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white;
+  filter: contrast(20);
+}
+
+.dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+
+.dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+
+.filter {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px)
+  }
+}
+
+@keyframes dots {
+  50% {
+    transform: translateX(-31px)
   }
 }
