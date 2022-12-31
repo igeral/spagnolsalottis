@@ -1540,8 +1540,8 @@ input[type="checkbox"]:focus {
   height: 16px;
   top: 12px;
   left: 15px;
-  filter: blur(4px);
-  background: #807c02;
+  /* filter: blur(4px); */
+  background: #6a670a;
   border-radius: 50%;
   transform: translateX(0);
   animation: dot 2.8s infinite;
@@ -1560,8 +1560,8 @@ input[type="checkbox"]:focus {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  filter: blur(4px);
-  background: #807c02;
+  /* filter: blur(4px); */
+  background: #6a670a;
   border-radius: 50%;
 }
 
