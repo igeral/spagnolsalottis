@@ -132,11 +132,11 @@ window.addEventListener("scroll", revealleft);
 window.addEventListener("scroll", revealright);
 
 localStorage.setItem('language', 'it')
-const italian = document.querySelector('.italian')
-const english = document.querySelector('.english')
-const russian = document.querySelector('.russian')
-const spanish = document.querySelector('.spanish')
-const german = document.querySelector('.german')
+const italian = document.querySelectorAll('.italian')
+const english = document.querySelectorAll('.english')
+const russian = document.querySelectorAll('.russian')
+const spanish = document.querySelectorAll('.spanish')
+const german = document.querySelectorAll('.german')
 
 const language = document.querySelector('.language')
 
@@ -159,35 +159,38 @@ language.addEventListener('click', function (e) {
 function changeLaguage() {
   if (!english || !italian || !russian || !spanish || !german) return;
   if (localStorage.getItem('language') === 'en') {
-    english.classList.remove('hidetext')
-    italian.classList.add('hidetext')
-    russian.classList.add('hidetext');
-    spanish.classList.add('hidetext');
-    german.classList.add('hidetext');
+    english.forEach(e => e.classList.remove('hidetext'));
+
+    italian.forEach(i => i.classList.add('hidetext'))
+    russian.forEach(r => r.classList.add('hidetext'))
+    spanish.forEach(s => s.classList.add('hidetext'))
+    german.forEach(g => g.classList.add('hidetext'))
   } else if (localStorage.getItem('language') === 'it') {
-    italian.classList.remove('hidetext')
-    english.classList.add('hidetext')
-    russian.classList.add('hidetext');
-    spanish.classList.add('hidetext');
-    german.classList.add('hidetext');
+    italian.forEach(i => i.classList.remove('hidetext'));
+
+    english.forEach(e => e.classList.add('hidetext'));
+    russian.forEach(r => r.classList.add('hidetext'))
+    spanish.forEach(s => s.classList.add('hidetext'))
+    german.forEach(g => g.classList.add('hidetext'))
   } else if (localStorage.getItem('language') === 'ru') {
-    italian.classList.add('hidetext')
-    english.classList.add('hidetext')
-    russian.classList.remove('hidetext');
-    spanish.classList.add('hidetext');
-    german.classList.add('hidetext');
+    italian.forEach(i => i.classList.add('hidetext'));
+    english.forEach(e => e.classList.add('hidetext'))
+    russian.forEach(r => r.classList.remove('hidetext'));
+
+    spanish.forEach(s => s.classList.add('hidetext'))
+    german.forEach(g => g.classList.add('hidetext'))
   } else if (localStorage.getItem('language') === 'es') {
-    italian.classList.add('hidetext')
-    english.classList.add('hidetext')
-    russian.classList.add('hidetext');
-    spanish.classList.remove('hidetext');
-    german.classList.add('hidetext');
+    italian.forEach(i => i.classList.add('hidetext'))
+    english.forEach(e => e.classList.add('hidetext'))
+    russian.forEach(r => r.classList.add('hidetext'));
+    spanish.forEach(s => s.classList.remove('hidetext'))
+    german.forEach(g => g.classList.add('hidetext'))
   } else if (localStorage.getItem('language') === 'de') {
-    italian.classList.add('hidetext')
-    english.classList.add('hidetext')
-    russian.classList.add = ('hidetext');
-    spanish.classList.add('hidetext');
-    german.classList.remove('hidetext');
+    italian.forEach(i => i.classList.add('hidetext'))
+    english.forEach(e => e.classList.add('hidetext'))
+    russian.forEach(r => r.classList.add('hidetext'))
+    spanish.forEach(s => s.classList.add('hidetext'))
+    german.forEach(g => g.classList.remove('hidetext'))
   }
 }
 
