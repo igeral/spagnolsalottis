@@ -1576,3 +1576,13 @@ input[type="checkbox"]:focus {
     transform: translateX(-31px)
   }
 }
+
+.privacybody {
+  margin: 10% 10%;
+}
+
+@media screen and (max-width: 630px) {
+  .privacybody {
+    margin: 36% 10%;
+  }
+}
